@@ -1,0 +1,35 @@
+.main-title {
+    color: #FAE8FF;
+        background: #A383AC;
+        background: linear-gradient(to right, #a383ac 0%, #FAE8FF 49%, #a383ac8e 65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* position: absolute; */
+}
+
+.text1, .text2, .text3 {
+    color: #FAE8FF;
+}
+
+.text1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.text2 {
+    font-size: 40px;
+    font-weight: 500;
+    width: 556px;
+    text-align: start;
+}
+
+.text3 {
+    font-size: 24px;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 38px;
+}
+
+.divText {
+    margin: 10px auto 900px 97px;
+}

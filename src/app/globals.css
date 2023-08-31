@@ -14,7 +14,7 @@ body {
   opacity: 0.1;
   background: #A855F7;
   filter: blur(1000px);
-  position: absolute;
+  position: fixed;
   top: -550px;
   right: -0px;
 }
@@ -40,7 +40,7 @@ background: #A383AC;
 }
 
 .main-title2 {
-  margin-top: 60rem;
+  margin-top: 120px;
   height: 103px;
 }
 
@@ -50,8 +50,9 @@ background: #A383AC;
 }
 
 .square-show {
-  position: absolute;
-  right: 40px;
+  /* position: absolute;
+  right: 40px; */
+  margin: auto 55%;
   width: 772px;
     height: 600px;
     flex-shrink: 0;
@@ -63,8 +64,8 @@ background: #A383AC;
 }
 
 .square-show2 {
-  position:absolute;
-  margin-top: 150px;
+  /* position:absolute; */
+  margin-top: -300px;
   margin-left: 40px;
   width: 772px;
     height: 600px;
@@ -122,6 +123,7 @@ transform: translateY(20px);
 
 .svg-icon {
   transition: transform .2s;
+  padding: 10px;
 }
 
 
