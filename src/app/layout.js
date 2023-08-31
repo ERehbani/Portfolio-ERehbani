@@ -1,7 +1,13 @@
+import Navbar from '@/components/navbar/page'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Prompt } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const prompt = Prompt({
+  weight: ["300", "500", "700"],
+  styles: ["normal", "italic"],
+  subsets: ["latin"]
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +17,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={prompt.className}>
+        <div className="background"></div>
+      <div className="background2"></div>
+        <Navbar/>
+        {children}
+        </body>
     </html>
   )
 }
