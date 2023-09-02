@@ -1,0 +1,88 @@
+.square-show {
+    margin: 40px auto;
+    width: 1353px;
+    height: 606px;
+    border-radius: 50px;
+    background: rgba(217, 217, 217, 0.05);
+    backdrop-filter: blur(32px);
+    border: 1.5px solid rgba(236, 234, 234, 0.411);
+    display: flex;
+
+}
+
+/* .square-show2 {
+    margin: 50px auto;
+    width: 1353px;
+    height: 606px;
+    border-radius: 50px;
+    background: rgba(217, 217, 217, 0.05);
+    backdrop-filter: blur(32px);
+    border: 1.5px solid rgba(236, 234, 234, 0.411);
+    display: flex;
+} */
+
+.info-show {
+    margin: 70px;
+}
+
+.title-show {
+    color: #FAE8FF;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.description-show {
+    color: #FAE8FF;
+    width: 600px;
+    font-weight: 300;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 23px;
+    width: 600px;
+    height: 100px;
+}
+
+.icons img {
+    margin: 0 5px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-show {
+    object-fit: contain;
+    width: 700px;
+    transition: transform .5s;
+}
+
+.image-show:hover {
+    transform: translateX(20px);
+    transform: scale(1.1);
+}
+
+.square-show,
+.square-show2 {
+    /* position: relative; */
+    transition: all 0.3s ease;
+}
+
+.square-show:hover,
+.square-show2:hover {
+    /* transform: translateY(-10px); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.svg-icon:hover {
+    transform: translateY(-5px);
+}
+
+.svg-icon {
+    transition: transform .2s;
+    padding: 10px;
+}

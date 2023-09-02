@@ -1,13 +1,15 @@
 .main-title {
     color: #FAE8FF;
-        background: #A383AC;
-        background: linear-gradient(to right, #a383ac 0%, #FAE8FF 49%, #a383ac8e 65%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        /* position: absolute; */
+    background: #A383AC;
+    background: linear-gradient(to right, #a383ac 0%, #FAE8FF 49%, #a383ac8e 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* position: absolute; */
 }
 
-.text1, .text2, .text3 {
+.text1,
+.text2,
+.text3 {
     color: #FAE8FF;
 }
 
@@ -19,8 +21,13 @@
 .text2 {
     font-size: 40px;
     font-weight: 500;
-    width: 556px;
-    text-align: start;
+    /* display: flex; */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+}
+
+.weatherIcon {
+    object-fit: contain;
 }
 
 .text3 {
@@ -30,6 +37,8 @@
     margin-top: 38px;
 }
 
+
+
 .divText {
-    margin: 10px auto 900px 97px;
+    margin: 10px auto auto 97px;
 }

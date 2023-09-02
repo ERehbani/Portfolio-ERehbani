@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html id="home" lang="en" className="!scroll-smooth">
       <body className={prompt.className}>
         <div className="background"></div>
         <div className="background2"></div>

@@ -1,10 +1,14 @@
-import Navbar from "@/components/navbar/page";
-import Image from "next/image";
+import React from "react";
+import About from "./about/page";
+import './globals.css'
+import Projects from "./projects/page";
+
 
 export default function Home() {
   return (
-    <div>
-      <div className="mt-20 mx-auto">
+    <div className="h-36">
+      <div className="mt-40 mx-auto">
+
         <h1 className="main-title text-8xl text-center font-medium mx-auto">
           Hi. I’m Elián <h1>A Full Stack Dev.</h1>
           {/* <h1>A Full Stack Dev.</h1> */}
@@ -15,50 +19,12 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="">
-        <h2 className="text-8xl mt-44 ml-32 h-32 main-title">My Projects</h2>
-      </div>
-      <div className="mt-10">
-        <div className="square-show">
-          <h2 className="title-show">Talent Forge, a course platform</h2>
-          <div className="icons">
-            <img className="svg-icon" src="React.svg" alt="React" />
-            <img className="svg-icon" src="tailwind.svg" alt="Tailwind" />
-            <img className="svg-icon" src="firebase.svg" alt="Firebase" />
-            <img
-              className="svg-icon"
-              src="mercadopago.svg"
-              alt="Mercado Pago"
-            />
-            <img className="svg-icon" src="mongodb.svg" alt="Mongo DB" />
-            <img className="svg-icon" src="Git.svg" alt="Git" />
-            <img className="svg-icon" src="Nodejs.svg" alt="NodeJS" />
-          </div>
-          <img
-            className="image-show"
-            src="Talent_forge.png"
-            alt="Talent Forge"
-          />
+        <div id="projects">
+          <Projects/>
         </div>
-        <div className="square-show2">
-          <h2 className="title-show">Web with API Countries</h2>
-          <div className="icons">
-            <img className="svg-icon" src="React.svg" alt="React" />
-            <img className="svg-icon" src="Redux.svg" alt="Redux" />
-            <img className="svg-icon" src="PostgreSQL.svg" alt="PostgreSQL" />
-            <img className="svg-icon" src="Nodejs.svg" alt="NodeJS" />
-            <img className="svg-icon" src="Nodemon.svg" alt="Nodemon" />
-            <img className="svg-icon" src="CSS.svg" alt="CSS" />
-            <img className="svg-icon" src="axios.svg" alt="Axios" />
-            <img className="svg-icon" src="express-color.svg" alt="ExpressJS" />
-            <img className="svg-icon" src="Git.svg" alt="Git" />
-          </div>
-          <img
-            className="image-show"
-            src="Web_with_api_countries.png"
-            alt="Countries API"
-          />
-        </div>
+
+      <div id="about">
+        <About/>
       </div>
 
       <h1 className="text-8xl text-center font-medium mx-auto main-title2">
