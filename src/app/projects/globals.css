@@ -10,6 +10,17 @@
 
 }
 
+.square-show-phone {
+    margin: 40px auto;
+    width: 1353px;
+    height: 500px;
+    border-radius: 50px;
+    background: rgba(217, 217, 217, 0.05);
+    backdrop-filter: blur(32px);
+    border: 1.5px solid rgba(236, 234, 234, 0.411);
+    display: flex;
+}
+
 /* .square-show2 {
     margin: 50px auto;
     width: 1353px;
@@ -29,6 +40,7 @@
     color: #FAE8FF;
     font-size: 40px;
     font-weight: 500;
+    width: 600px
 }
 
 .description-show {
@@ -57,13 +69,34 @@
 
 .image-show {
     object-fit: contain;
-    width: 700px;
+    width: 600px;
     transition: transform .5s;
 }
 
 .image-show:hover {
     transform: translateX(20px);
     transform: scale(1.1);
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 519px;
+    margin-left: 50px;
+
+}
+
+.phone-show {
+    transition: transform .5s;
+    width: 163px;
+    margin: 50px 20px;
+
+}
+
+
+.phone-show:hover {
+    transform: scale(1.5)
 }
 
 .square-show,
@@ -85,4 +118,10 @@
 .svg-icon {
     transition: transform .2s;
     padding: 10px;
+    height: auto;
+    object-fit: contain;
+}
+
+.links-projects {
+    color: white;
 }

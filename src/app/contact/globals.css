@@ -1,0 +1,35 @@
+.contact-container {
+    width: 17vw;
+    margin: auto;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-items {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    background: rgba(217, 217, 217, 0.05);
+    backdrop-filter: blur(32px);
+    /* border: 1px solid rgba(236, 234, 234, 0.411); */
+    border: 1px solid transparent;
+    border-image-source: linear-gradient(90deg, #ffffff81 0%, #ffffff00 50%, #ffffff81 90%);
+    border-image-slice: 1;
+
+
+}
+
+.contact-items img {
+    margin: 50px auto 15px auto;
+}
+
+.contact-items p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #FAE8FF;
+}
