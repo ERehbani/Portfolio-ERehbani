@@ -1,8 +1,8 @@
 import Navbar from "@/components/navbar/page";
 import "./globals.css";
 import { Inter, Prompt } from "next/font/google";
+import Providers from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
 const prompt = Prompt({
   weight: ["300", "500", "700"],
   styles: ["normal", "italic"],
@@ -18,10 +18,12 @@ export default function RootLayout({ children }) {
   return (
     <html id="home" lang="en" className="!scroll-smooth">
       <body className={prompt.className}>
+       <Providers>
         <div className="background"></div>
         <div className="background2"></div>
         <Navbar />
         {children}
+       </Providers>
       </body>
     </html>
   );

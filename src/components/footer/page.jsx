@@ -9,8 +9,8 @@ function Footer() {
           <h1 className='text-white font-thin'>Elian Rehbani</h1>
           <h2 className='text-white font-thin'>2023</h2>
           <div className='flex justify-around'>
-            <img src="linkedin.svg" alt="Linkedin" />
-          <img src="Github.svg" alt="Github" className='ml-10'/>
+            <a href="https://www.linkedin.com/in/elian-rehbani-96113624b/" target='_blank'><img src="linkedin.svg" alt="Linkedin" /></a>
+          <a href="https://github.com/ERehbani" target='_blank'><img src="Github-dark.svg" alt="Github" className='ml-10 w-12'/></a>
           </div>
         </div>
       </footer>

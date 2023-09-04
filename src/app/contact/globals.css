@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.contact-items {
+[data-theme="dark"] .contact-items {
     width: 200px;
     height: 200px;
     flex-shrink: 0;
@@ -19,17 +19,54 @@
     border: 1px solid transparent;
     border-image-source: linear-gradient(90deg, #ffffff81 0%, #ffffff00 50%, #ffffff81 90%);
     border-image-slice: 1;
-
-
+    transition: all .5s;
 }
+
+[data-theme="light"] .contact-items {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    background: rgba(217, 217, 217, 0.05);
+    backdrop-filter: blur(32px);
+    /* border: 1px solid rgba(236, 234, 234, 0.411); */
+    border: 1px solid transparent;
+    border-image-source: linear-gradient(90deg, #9747FF 0%, #FFFFFF 50%, #9747FF 90%);
+    border-image-slice: 1;
+    transition: all .5s;
+}
+
 
 .contact-items img {
     margin: 50px auto 15px auto;
 }
 
-.contact-items p {
+.contact-items:hover {
+    transform: translate3d(-10px, -10px, -20px);
+    filter: drop-shadow(10px 5px 4px #49494977);
+}
+
+[data-theme="dark"] .contact-items p {
     display: flex;
     text-align: center;
     justify-content: center;
     color: #FAE8FF;
+}
+
+[data-theme="light"] .contact-items p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #0B0014;
+}
+
+[data-theme="light"] #linkedin img {
+    content: url('../../../public/linkedin-light.svg');
+}
+
+[data-theme="light"] #gmail img {
+    content: url('../../../public/gmail-light.svg');
+}
+
+[data-theme="dark"] #github img {
+    content: url('../../../public/Github-dark.svg');
 }

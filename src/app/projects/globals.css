@@ -1,4 +1,4 @@
-.square-show {
+[data-theme="dark"] .square-show {
     margin: 40px auto;
     width: 1353px;
     height: 606px;
@@ -7,10 +7,25 @@
     backdrop-filter: blur(32px);
     border: 1.5px solid rgba(236, 234, 234, 0.411);
     display: flex;
+    transition-duration: .3s;
 
 }
 
-.square-show-phone {
+[data-theme="light"] .square-show,
+.square-show-phone,
+.square-show2 {
+    margin: 40px auto;
+    width: 1353px;
+    height: 606px;
+    border-radius: 50px;
+    background: #7e22ce2a;
+    backdrop-filter: blur(32px);
+    border: 1.5px solid #9747FF;
+    display: flex;
+    transition-duration: .3s;
+}
+
+[data-theme="dark"] .square-show-phone {
     margin: 40px auto;
     width: 1353px;
     height: 500px;
@@ -21,30 +36,32 @@
     display: flex;
 }
 
-/* .square-show2 {
-    margin: 50px auto;
-    width: 1353px;
-    height: 606px;
-    border-radius: 50px;
-    background: rgba(217, 217, 217, 0.05);
-    backdrop-filter: blur(32px);
-    border: 1.5px solid rgba(236, 234, 234, 0.411);
-    display: flex;
-} */
-
 .info-show {
     margin: 70px;
 }
 
-.title-show {
+[data-theme="dark"] .title-show {
     color: #FAE8FF;
     font-size: 40px;
     font-weight: 500;
     width: 600px
 }
 
-.description-show {
+[data-theme="light"] .title-show {
+    color: #0B0014;
+    font-size: 40px;
+    font-weight: 500;
+    width: 600px
+}
+
+[data-theme="dark"] .description-show {
     color: #FAE8FF;
+    width: 600px;
+    font-weight: 300;
+}
+
+[data-theme="light"] .description-show {
+    color: #0B0014;
     width: 600px;
     font-weight: 300;
 }
@@ -100,28 +117,117 @@
 }
 
 .square-show,
-.square-show2 {
+.square-show-phone {
     /* position: relative; */
     transition: all 0.3s ease;
 }
 
 .square-show:hover,
-.square-show2:hover {
+.square-show-phone:hover {
     /* transform: translateY(-10px); */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
 }
 
 .svg-icon:hover {
     transform: translateY(-5px);
+    filter: drop-shadow(10px 5px 4px #49494977);
 }
 
 .svg-icon {
-    transition: transform .2s;
+    transition: all .2s;
     padding: 10px;
     height: auto;
     object-fit: contain;
 }
 
 .links-projects {
-    color: white;
+    fill: white !important;
+}
+
+[data-theme="dark"] #github-link img {
+    content: url('../../../public/Github-dark.svg');
+}
+
+[data-theme="light"] #web-link img {
+    content: url('../../../public/web-light.svg');
+}
+
+[data-theme="light"] .icons [alt="ExpressJS"] {
+    content: url('../../../public/express-light.svg');
+    width: 70px;
+}
+
+
+
+
+.tooltip1,
+.tooltip2 {
+    position: absolute;
+    top: 0;
+    margin-left: 12px;
+    font-size: 12px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 3;
+    color: #0B0014;
+}
+
+.tooltip1::before,
+.tooltip2::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#mongodb {
+    margin-left: -9px;
+}
+
+#mp {
+    margin-left: -2px;
+}
+
+#firebase {
+    margin-left: -1px;
+}
+
+#git {
+    margin-left: 25px;
+}
+
+#git2 {
+    margin-top: 60px;
+    margin-left: 25px;
+}
+
+#express {
+    margin-top: 75px;
+}
+
+.div-icons:hover .tooltip1,
+.div-icons:hover .tooltip2 {
+    top: 180px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.div-icons:hover .tooltip2 {
+    top: 120px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }

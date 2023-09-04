@@ -1,16 +1,17 @@
 .image-certificate-henry {
     width: 750px;
-    transition: transform .5s;
+    transition: all .5s;
 }
 
 .image-certificate-english {
     width: 350px;
-    transition: transform .5s;
+    transition: all .5s;
 }
 
 .image-certificate-henry:hover,
 .image-certificate-english:hover {
-    transform: scale(1.2);
+    transform: scale(1.01);
+    filter: drop-shadow(10px 5px 4px #49494977);
 }
 
 .image-certificate-container {
@@ -24,6 +25,10 @@
     text-align: center;
 }
 
-.description-certificate {
+[data-theme="dark"] .description-certificate {
     color: #FAE8FF;
+}
+
+[data-theme="light"] .description-certificate {
+    color: #0B0014;
 }

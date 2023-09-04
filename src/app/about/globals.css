@@ -7,10 +7,21 @@
     /* position: absolute; */
 }
 
-.text1,
-.text2,
-.text3 {
+[data-theme="dark"].text1 {
     color: #FAE8FF;
+}
+
+[data-theme="dark"].text2 {
+    color: #FAE8FF;
+}
+
+[data-theme="dark"].text3 {
+    color: #FAE8FF;
+}
+
+
+[data-theme="light"] .text1 {
+    color: #0B0014;
 }
 
 .text1 {
@@ -37,8 +48,31 @@
     margin-top: 38px;
 }
 
-
+[data-theme="light"] .main-title2 {
+    background: #0B0014;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .divText {
     margin: 10px auto auto 97px;
+}
+
+[data-theme="light"] #figma img {
+    content: url('../../../public/figma-light.svg');
+    width: 70px;
+}
+
+[data-theme="light"] #vscode img {
+    content: url('../../../public/vscode-light.svg');
+    width: 70px;
+}
+
+[data-theme="dark"] #github img {
+    content: url('../../../public/Github-dark.svg');
+}
+
+[data-theme="light"] #insomnia img {
+    content: url('../../../public/insomnia-light.svg');
+    width: 70px;
 }

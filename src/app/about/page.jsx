@@ -43,13 +43,13 @@ return (
   <div className="">
     <div>
       <h1 className="main-title flex text-7xl text-center font-medium mt-20 justify-center">
-        About <h1 className="font-bold ml-10">me</h1>
+        About <b className="font-bold ml-10">me</b>
       </h1>
     </div>
 
     <div className="mt-20 flex">
       <img
-        className="w-96 h-96 rounded-t-full ml-96 mt-24"
+        className="w-96 h-96 rounded-t-full ml-96 mt-24 z-10"
         src="photo.jpg"
         alt="photo"
       />
@@ -58,10 +58,10 @@ return (
           <p className="text2">
   A Full Stack Developer Junior <br />
   working from {result.main ? parseInt(result.main.temp - kelvin) : ""}°C
-  <div className="flex align-center">
+  <b className="flex align-center">
     Mar del Plata
     {weatherIcon && <img className="weatherIcon" src={weatherIcon} alt="Weather Icon" />}, Argentina
-  </div>
+  </b>
 </p>
         <h3 className="text3">
           I started my path as a Full Stack programmer in 2023 learning the
@@ -89,11 +89,11 @@ return (
           <img src="Redux.png" alt="Redux" />
           <p>Redux</p>
         </div>
-        <div className="item-languages">
+        <div className="item-languages" id="expressjs">
           <img src="Express.png" alt="Express" />
           <p>ExpressJS</p>
         </div>
-        <div className="item-languages">
+        <div className="item-languages" id="next">
           <img src="Next.png" alt="Next" />
           <p>NextJS</p>
         </div>
@@ -127,19 +127,19 @@ return (
         Softwares
       </h1>
       <div className="grid-container2">
-        <div className="item-languages">
+        <div className="item-languages" id="figma">
           <img src="Figma.svg" alt="Figma" />
           <p>Figma</p>
         </div>
-        <div className="item-languages">
+        <div className="item-languages" id="vscode">
           <img src="VSCode.svg" alt="VSCode" />
           <p>VSCode</p>
         </div>
-        <div className="item-languages">
-          <img src="Github.svg" alt="Github" />
+        <div className="item-languages" id="github">
+          <img src="Github.svg" alt="Github" className="w-16"/>
           <p>Github</p>
         </div>
-        <div className="item-languages">
+        <div className="item-languages" id="insomnia">
           <img src="Insomnia.svg" alt="Insomnia" />
           <p>Insomnia</p>
         </div>
