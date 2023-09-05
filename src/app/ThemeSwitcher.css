@@ -1,12 +1,6 @@
 /* The switch - the box around the slider */
-.switch {
-    font-size: 17px;
-    position: relative;
-    right: 150px;
-    display: inline-block;
-    width: 3.5em;
-    height: 2em;
-}
+
+
 
 /* Hide default HTML checkbox */
 .switch input {

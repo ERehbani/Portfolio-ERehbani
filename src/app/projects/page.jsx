@@ -47,7 +47,7 @@ function Projects() {
           </div>
           <p className='description-show'> I participated in the creation of a web platform based on the purchase and sale of courses in which I gained knowledge in Figma, Git Flow and managed to implement the Mercado Pago payment gateway to make purchases on the web. I was part of the Frontend section directing its web design, declaring the color palette of the platform and distribution of the components and its responsive design. Using for the creation of the same Javascript, MongoDB, ExpressJS, React JS, CSS and Tailwind</p>
 
-          <div className='mt-10 flex'>
+          <div className='webGithub max-lg:justify-center max-lg:-ml-5 flex'>
             <a target='_blank' href="https://deploy-front-end-git-main-shakkus.vercel.app/home" id="web-link"><img className='links-projects w-10 justify-center mr-5' src="web.svg" alt="Web" /></a>
             <a href="https://github.com/Shakkus/TalentForgeFrontEnd" target="_blank" id='github-link'><img className='links-projects w-9 justify-center' src="Github.svg" alt="Github" /></a>
           </div>
@@ -68,11 +68,11 @@ function Projects() {
           <div className="icons">
             <div className='div-icons'>
               <img className="svg-icon" src="React.svg" alt="React" />
-            <span class="tooltip2">React</span>
+            <span className="tooltip2">React</span>
             </div>
             <div className="div-icons">
               <img className="svg-icon" src="Redux.svg" alt="Redux" />
-              <span class="tooltip2">Redux</span>
+              <span className="tooltip2">Redux</span>
             </div>
             <div className="div-icons">
               <img className="svg-icon" src="PostgreSQL.svg" alt="PostgreSQL" />
@@ -103,15 +103,15 @@ function Projects() {
               <span className="tooltip2" id='git2'>Git</span>
             </div>
           </div>
-          <p className='description-show mt-20'>I made a landing on countries where the main points were to create a creation form in the database, search by name, detail of each country, combined filters and pagination with a clear, minimalist and visually pleasing design using Javascript, React , Redux, CSS and SQL</p>
-          <div className='mt-10 flex'>
+          <p className='description-show2'>I made a landing on countries where the main points were to create a creation form in the database, search by name, detail of each country, combined filters and pagination with a clear, minimalist and visually pleasing design using Javascript, React , Redux, CSS and SQL</p>
+          <div className='webGithub max-lg:justify-center max-lg:-ml-5 flex'>
             <a href="/" target="_blank" id='web-link'><img className='links-projects w-10 justify-center mr-5' src="web.svg" alt="Web" /></a>
             <a href="https://github.com/ERehbani/PI-COUNTRIES" target="_blank" id='github-link'><img className='links-projects w-9 justify-center' src="Github.svg" alt="Github" /></a>
           </div>
           </div>
           <img
             className="image-show"
-            src="Web_with_api_countries.png"
+            src="web_api_countries.png"
             alt="Countries API"
           />
         </div>
@@ -125,7 +125,7 @@ function Projects() {
             </div>          
           </div>
           <p className='description-show mt-8'>Application for organizing expenses by setting an initial budget, which will be monitored through the expenses that are added.</p>
-          <div className='mt-8 flex'>
+          <div className='mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
             <a href="https://github.com/ERehbani/Planificador-Gastos" target="_blank" id='github-link'><img className='links-projects w-9 justify-center' src="Github.svg" alt="Github" /></a>
           </div>
           </div>
@@ -157,7 +157,7 @@ function Projects() {
             </div>            
           </div>
           <p className='description-show mt-5'>With the functionalities of creating a new appointment with a form in Modal mode and Date Picker to set a registration date, viewing new appointments, viewing, editing and deleting them</p>
-          <div className='mt-5 flex'>
+          <div className='mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
             <a href="https://github.com/ERehbani/GestorCitas-ReactNative" target="_blank" id='github-link'><img className='links-projects w-9 justify-center' src="Github.svg" alt="Github" /></a>
           </div>
           </div>
@@ -187,14 +187,14 @@ function Projects() {
               <img className="svg-icon w-20" src="React-Native.png" alt="React Native" />
               <span className="tooltip1 -mt-16 left-14">React Native</span>
             </div> 
-            <div className="div-icons">
+            <div className="div-icons max-lg:mt-3 max-lg:-ml-3">
               <img className="svg-icon w-24" src="OpenWeather.svg" alt="Open weather" />
               <span className="tooltip1 -mt-16 left-32">Open Weather API</span>
             </div>
             
           </div>
           <p className='description-show mt-10'>App in React Native using the Open Weather API to show the weather of each city applying its name and corresponding country</p>
-          <div className='mt-10 flex'>
+          <div className='mt-10 max-lg:mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
             <a href="https://github.com/ERehbani/Weather-App" target="_blank" id='github-link'><img className='links-projects w-9 justify-center ' src="Github.svg" alt="Github" /></a>
           </div>
           </div>

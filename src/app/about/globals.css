@@ -7,6 +7,10 @@
     /* position: absolute; */
 }
 
+.weatherIcon {
+    object-fit: contain;
+}
+
 [data-theme="dark"].text1 {
     color: #FAE8FF;
 }
@@ -22,30 +26,6 @@
 
 [data-theme="light"] .text1 {
     color: #0B0014;
-}
-
-.text1 {
-    font-size: 64px;
-    font-weight: 700;
-}
-
-.text2 {
-    font-size: 40px;
-    font-weight: 500;
-    /* display: flex; */
-    align-items: center;
-    /* Centra verticalmente los elementos */
-}
-
-.weatherIcon {
-    object-fit: contain;
-}
-
-.text3 {
-    font-size: 24px;
-    font-weight: 300;
-    width: 600px;
-    margin-top: 38px;
 }
 
 [data-theme="light"] .main-title2 {
@@ -75,4 +55,121 @@
 [data-theme="light"] #insomnia img {
     content: url('../../../public/insomnia-light.svg');
     width: 70px;
+}
+
+@media (max-width: 640px) {
+
+
+    .imageAbout {
+        width: 12rem;
+        height: 12rem;
+        border-top-left-radius: 9999px;
+        border-top-right-radius: 9999px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .text1 {
+        font-size: 30px;
+    }
+
+    .text2 {
+        font-size: 15px;
+    }
+
+    .text3 {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .weatherIcon {
+        height: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .imageAbout {
+        width: 16rem;
+        height: 16rem;
+        /* margin-left: 2rem; */
+        border-top-left-radius: 9999px;
+        border-top-right-radius: 9999px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .text1 {
+        font-size: 50px;
+        margin: 0 auto;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .text2 {
+        font-size: 30px;
+        width: fit-content;
+        margin: 0 auto;
+        margin: 0 auto;
+    }
+
+    .text3 {
+        width: 300px;
+        font-size: 15px;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .weatherIcon {
+        height: 50px;
+    }
+
+    .divText {
+        margin: 0 auto;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .imageAbout-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .imageAbout {
+        width: 24rem;
+        height: 24rem;
+        align-items: end;
+        border-top-left-radius: 9999px;
+        border-top-right-radius: 9999px;
+    }
+
+    .text1 {
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    .text2 {
+        font-size: 40px;
+        font-weight: 500;
+        /* display: flex; */
+        align-items: center;
+        /* Centra verticalmente los elementos */
+    }
+
+    .text3 {
+        font-size: 24px;
+        font-weight: 300;
+        width: 600px;
+        margin-top: 38px;
+    }
+
+    .divText {
+        margin: 0 0 0 50px;
+    }
+
 }

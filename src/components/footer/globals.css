@@ -3,4 +3,8 @@
     height: 160px;
     background-color: black;
     align-items: center;
+
+    @media (max-width: 1024px) {
+        height: 80px;
+    }
 }

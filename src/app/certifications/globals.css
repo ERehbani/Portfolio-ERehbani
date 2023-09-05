@@ -32,3 +32,23 @@
 [data-theme="light"] .description-certificate {
     color: #0B0014;
 }
+
+@media (max-width: 640px) {
+    .image-certificate-henry {
+        width: 340px;
+    }
+
+    .image-certificate-english {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-certificate-henry {
+        width: 650px;
+    }
+
+    .image-certificate-english {
+        width: 370px;
+    }
+}

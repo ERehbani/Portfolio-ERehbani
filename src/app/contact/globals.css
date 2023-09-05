@@ -70,3 +70,17 @@
 [data-theme="dark"] #github img {
     content: url('../../../public/Github-dark.svg');
 }
+
+
+@media (max-width: 1024px) {
+    .contact-container {
+        width: 8.5vw;
+        margin: auto;
+        gap: 12px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+}

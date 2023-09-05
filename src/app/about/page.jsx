@@ -47,18 +47,20 @@ return (
       </h1>
     </div>
 
-    <div className="mt-20 flex">
-      <img
-        className="w-96 h-96 rounded-t-full ml-96 mt-24 z-10"
+    <div className="mt-20 justify-center flex max-lg:mt-5 max-lg:block">
+        <div className="imageAbout-container">
+          <img
+        className="imageAbout"
         src="photo.jpg"
         alt="photo"
       />
+        </div>
       <div className="divText">
         <h1 className="text1">Hello, I'm Elian</h1>
           <p className="text2">
   A Full Stack Developer Junior <br />
   working from {result.main ? parseInt(result.main.temp - kelvin) : ""}°C
-  <b className="flex align-center">
+  <b className="flex align-center max-lg:text-lg max-lg:w-fit my-0 mx-auto">
     Mar del Plata
     {weatherIcon && <img className="weatherIcon" src={weatherIcon} alt="Weather Icon" />}, Argentina
   </b>
@@ -123,7 +125,7 @@ return (
         </div>
       </div>
 
-      <h1 className="text-8xl text-center font-medium mx-auto main-title3">
+      <h1 className="max-lg:mt-9 text-8xl text-center font-medium mx-auto main-title3">
         Softwares
       </h1>
       <div className="grid-container2">

@@ -1,6 +1,6 @@
 [data-theme="dark"] .navbar {
     position: fixed;
-    margin: -145px 33%;
+
     border: 1.5px solid rgba(236, 234, 234, 0.411);
     border-radius: 999px;
     background: rgba(217, 217, 217, 0.05);
@@ -20,149 +20,201 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.navbar2 {
-    margin-top: -120px;
+@media (min-width: 1024px) {
+    .navbar {
+        width: 33.3%;
+        margin: -145px 33%;
+    }
+
+    .switch {
+        font-size: 17px;
+        position: relative;
+        right: 150px;
+        display: inline-block;
+        width: 3.5em;
+        height: 2em;
+    }
+
+    .navbar2 {
+        margin-top: -120px;
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(20, 20, 20);
+        border: none;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+        cursor: pointer;
+        transition-duration: .3s;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .svgIcon {
+        width: 12px;
+        transition-duration: .3s;
+    }
+
+    .svgIcon path {
+        fill: white;
+    }
+
+    .svgIcon path {
+        fill: #0B0014;
+    }
+
+    [data-theme="light"] #home-icon {
+        fill: #0B0014;
+    }
+
+    .button:hover .svgIcon {
+        width: 50px;
+        transition-duration: .3s;
+        transform: translateY(60);
+    }
+
+    .button::before {
+        position: absolute;
+        top: -20px;
+        content: "About";
+        color: white;
+        transition-duration: .3s;
+        font-size: 2px;
+    }
+
+    .button:hover::before {
+        font-size: 13px;
+        opacity: 1;
+        transform: translateY(30px);
+        transition-duration: .3s;
+    }
+
+
+    .bookmarkBtn {
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition-duration: .3s;
+        overflow: hidden;
+    }
+
+    .IconContainer {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        z-index: 2;
+        transition-duration: .3s;
+    }
+
+    .icon {
+        border-radius: 1px;
+    }
+
+    [data-theme="dark"] .text {
+        height: 100%;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FAE8FF;
+        z-index: 1;
+        transition-duration: .3s;
+        font-size: 0.9em;
+    }
+
+    [data-theme="light"] .text {
+        height: 100%;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0B0014;
+        z-index: 1;
+        transition-duration: .3s;
+        font-size: 0.9em;
+    }
+
+
+    .bookmarkBtn:hover .IconContainer {
+        width: 90px;
+        border-radius: 40px;
+        transition-duration: .3s;
+    }
+
+    [data-theme="dark"] .bookmarkBtn:hover .text {
+        transform: translate(10px);
+        width: 0;
+        font-size: 0;
+        transition-duration: .3s;
+    }
+
+    [data-theme="light"] .bookmarkBtn:hover .text {
+        transform: translate(10px);
+        width: 0;
+        font-size: 0;
+        transition-duration: .3s;
+    }
+
+    .bookmarkBtn:active {
+        transform: scale(0.95);
+        transition-duration: .3s;
+    }
+
+    [data-theme="dark"] .navlist {
+        color: #FAE8FF;
+    }
+
+    [data-theme="light"] .navlist {
+        color: #0B0014;
+    }
 }
 
-.button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    border: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
-    cursor: pointer;
-    transition-duration: .3s;
-    overflow: hidden;
-    position: relative;
-}
+@media (max-width: 1024px) {
+    [data-theme="dark"] .navbar {
+        position: fixed;
+        width: 75%;
+        left: 50%;
+        margin-top: -140px;
+        transform: translateX(-50%);
+    }
 
-.svgIcon {
-    width: 12px;
-    transition-duration: .3s;
-}
+    [data-theme="light"] .navbar {
+        width: 75%;
+        margin-top: -145px;
+        margin-left: 50px;
+    }
 
-.svgIcon path {
-    fill: white;
-}
+    [data-theme="dark"] .navlist {
+        width: 100%;
+    }
 
-.svgIcon path {
-    fill: #0B0014;
-}
+    [data-theme="light"] .navlist {
+        width: 100%;
+        color: #FAE8FF;
+    }
 
-[data-theme="light"] #home-icon {
-    fill: #0B0014;
-}
+    .navbar p {
+        display: none;
+    }
 
-.button:hover .svgIcon {
-    width: 50px;
-    transition-duration: .3s;
-    transform: translateY(60);
-}
-
-.button::before {
-    position: absolute;
-    top: -20px;
-    content: "About";
-    color: white;
-    transition-duration: .3s;
-    font-size: 2px;
-}
-
-.button:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    transform: translateY(30px);
-    transition-duration: .3s;
-}
-
-
-.bookmarkBtn {
-    width: 100px;
-    height: 40px;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition-duration: .3s;
-    overflow: hidden;
-}
-
-.IconContainer {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    z-index: 2;
-    transition-duration: .3s;
-}
-
-.icon {
-    border-radius: 1px;
-}
-
-[data-theme="dark"] .text {
-    height: 100%;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FAE8FF;
-    z-index: 1;
-    transition-duration: .3s;
-    font-size: 0.9em;
-}
-
-[data-theme="light"] .text {
-    height: 100%;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #0B0014;
-    z-index: 1;
-    transition-duration: .3s;
-    font-size: 0.9em;
-}
-
-
-.bookmarkBtn:hover .IconContainer {
-    width: 90px;
-    border-radius: 40px;
-    transition-duration: .3s;
-}
-
-[data-theme="dark"] .bookmarkBtn:hover .text {
-    transform: translate(10px);
-    width: 0;
-    font-size: 0;
-    transition-duration: .3s;
-}
-
-[data-theme="light"] .bookmarkBtn:hover .text {
-    transform: translate(10px);
-    width: 0;
-    font-size: 0;
-    transition-duration: .3s;
-}
-
-.bookmarkBtn:active {
-    transform: scale(0.95);
-    transition-duration: .3s;
-}
-
-[data-theme="dark"] .navlist {
-    color: #FAE8FF;
-}
-
-[data-theme="light"] .navlist {
-    color: #0B0014;
+    .switch {
+        display: none;
+        position: relative;
+        right: 4px;
+        top: 30px;
+    }
 }

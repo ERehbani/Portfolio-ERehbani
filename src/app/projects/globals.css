@@ -9,6 +9,11 @@
     display: flex;
     transition-duration: .3s;
 
+    @media (max-width: 1024px) {
+        height: max-content;
+        display: block;
+        width: 90%;
+    }
 }
 
 [data-theme="light"] .square-show,
@@ -23,6 +28,12 @@
     border: 1.5px solid #9747FF;
     display: flex;
     transition-duration: .3s;
+
+    @media (max-width: 1024px) {
+        height: max-content;
+        display: block;
+        width: 90%;
+    }
 }
 
 [data-theme="dark"] .square-show-phone {
@@ -34,36 +45,102 @@
     backdrop-filter: blur(32px);
     border: 1.5px solid rgba(236, 234, 234, 0.411);
     display: flex;
+
+    @media (max-width: 1024px) {
+        width: 90%;
+        display: block;
+        height: max-content;
+    }
+
+    @media (max-width: 640px) {
+        width: 90%;
+        display: block;
+        height: max-content;
+        border-radius: 25px;
+    }
 }
 
 .info-show {
     margin: 70px;
+
+    @media (max-width: 1024px) {
+        margin: 20px 0 0 20px;
+    }
+}
+
+.webGithub {
+    margin-top: 20px;
+
+    @media (max-width: 1024) {
+        margin-top: 1px;
+        display: flex;
+        justify-items: center;
+
+    }
 }
 
 [data-theme="dark"] .title-show {
     color: #FAE8FF;
     font-size: 40px;
     font-weight: 500;
-    width: 600px
+    width: 600px;
+
+    @media (max-width: 1024px) {
+        font-size: 25px;
+        width: 300px;
+    }
 }
 
 [data-theme="light"] .title-show {
     color: #0B0014;
     font-size: 40px;
     font-weight: 500;
-    width: 600px
+    width: 600px;
+
+    @media (max-width: 1024px) {
+        font-size: 25px;
+        width: 300px;
+    }
 }
 
-[data-theme="dark"] .description-show {
+[data-theme="dark"] .description-show,
+.description-show2 {
     color: #FAE8FF;
     width: 600px;
     font-weight: 300;
+    margin-top: 50px;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+
+    @media (max-width: 640px) {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+
+[data-theme="light"] .description-show2 {
+    color: #0B0014;
+    margin-top: 50px;
+
+    @media (max-width: 1024px) {
+        margin-top: 10px;
+    }
 }
 
 [data-theme="light"] .description-show {
     color: #0B0014;
     width: 600px;
     font-weight: 300;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+
+    @media (max-width: 640px) {
+        font-size: 10px;
+    }
 }
 
 .icons {
@@ -72,6 +149,16 @@
     margin-top: 23px;
     width: 600px;
     height: 100px;
+
+    @media (max-width: 1024px) {
+        height: 10%;
+    }
+
+    @media (max-width: 640px) {
+        margin-top: 11.5px;
+        width: 100%;
+        height: 20%;
+    }
 }
 
 .icons img {
@@ -82,12 +169,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1024px) {
+        display: block;
+        width: 100%;
+    }
 }
 
 .image-show {
     object-fit: contain;
     width: 600px;
     transition: transform .5s;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .image-show:hover {
@@ -102,12 +199,38 @@
     width: 519px;
     margin-left: 50px;
 
+    @media (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        width: 100%;
+        height: 300px;
+    }
+
+    @media (max-width: 640px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        width: 100%;
+        height: 210px;
+    }
+
 }
 
 .phone-show {
     transition: transform .5s;
     width: 163px;
     margin: 50px 20px;
+
+    @media (max-width: 1024px) {
+        width: 120px;
+    }
+
+    @media (max-width: 640px) {
+        width: 81.5px;
+    }
 
 }
 
@@ -139,10 +262,20 @@
     padding: 10px;
     height: auto;
     object-fit: contain;
+
+    @media (max-width: 1024px) {
+        width: 50px;
+        object-fit: contain;
+        height: 50px;
+    }
 }
 
 .links-projects {
     fill: white !important;
+
+    @media (max-width: 640px) {
+        width: 35px;
+    }
 }
 
 [data-theme="dark"] #github-link img {
@@ -159,75 +292,84 @@
 }
 
 
+@media (max-width:1024px) {
 
-
-.tooltip1,
-.tooltip2 {
-    position: absolute;
-    top: 0;
-    margin-left: 12px;
-    font-size: 12px;
-    background: #fff;
-    color: #fff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    z-index: 3;
-    color: #0B0014;
+    .tooltip1,
+    .tooltip2 {
+        display: none;
+    }
 }
 
-.tooltip1::before,
-.tooltip2::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #fff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
+@media (min-width: 1024px) {
 
-#mongodb {
-    margin-left: -9px;
-}
+    .tooltip1,
+    .tooltip2 {
+        position: absolute;
+        top: 0;
+        margin-left: 12px;
+        font-size: 12px;
+        background: #fff;
+        color: #fff;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: 3;
+        color: #0B0014;
+    }
 
-#mp {
-    margin-left: -2px;
-}
+    .tooltip1::before,
+    .tooltip2::before {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        background: #fff;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
 
-#firebase {
-    margin-left: -1px;
-}
+    #mongodb {
+        margin-left: -9px;
+    }
 
-#git {
-    margin-left: 25px;
-}
+    #mp {
+        margin-left: -2px;
+    }
 
-#git2 {
-    margin-top: 60px;
-    margin-left: 25px;
-}
+    #firebase {
+        margin-left: -1px;
+    }
 
-#express {
-    margin-top: 75px;
-}
+    #git {
+        margin-left: 25px;
+    }
 
-.div-icons:hover .tooltip1,
-.div-icons:hover .tooltip2 {
-    top: 180px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
+    #git2 {
+        margin-top: 60px;
+        margin-left: 25px;
+    }
 
-.div-icons:hover .tooltip2 {
-    top: 120px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+    #express {
+        margin-top: 75px;
+    }
+
+    .div-icons:hover .tooltip1,
+    .div-icons:hover .tooltip2 {
+        top: 180px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .div-icons:hover .tooltip2 {
+        top: 120px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
 }

@@ -23,9 +23,9 @@ function ThemeSwitcher() {
 
     return (
         <div>
-        <label class="switch">
+        <label className="switch">
           <input type="checkbox" onClick={toggleTheme} checked={theme === 'dark'}/>
-          <span class="slider"></span>
+          <span className="slider"></span>
         </label>
         </div>
     )
