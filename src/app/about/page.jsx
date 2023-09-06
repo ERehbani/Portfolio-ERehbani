@@ -64,7 +64,7 @@ return (
   working from {result.main ? parseInt(result.main.temp - kelvin) : ""}°C
   <b className="flex align-center max-lg:text-lg max-lg:w-fit my-0 mx-auto">
     Mar del Plata
-    {weatherIcon && <img className="weatherIcon" src={weatherIcon} alt="Weather Icon" />}, Argentina
+    {weatherIcon && (<picture><img className="weatherIcon" src={weatherIcon} alt="Weather Icon" /></picture>)}, Argentina
     
   </b>
 </p>
