@@ -1,5 +1,6 @@
 import React from 'react'
 import './globals.css'
+import Image from 'next/image'
 
 function Footer() {
   return (
@@ -9,8 +10,8 @@ function Footer() {
           <h1 className='text-white font-thin'>Elian Rehbani</h1>
           <h2 className='text-white font-thin'>2023</h2>
           <div className='flex justify-around'>
-            <a href="https://www.linkedin.com/in/elian-rehbani-96113624b/" target='_blank'><img src="linkedin.svg" alt="Linkedin" className='max-lg:w-6'/></a>
-          <a href="https://github.com/ERehbani" target='_blank'><img src="Github-dark.svg" alt="Github" className='ml-10 w-12 max-lg:w-6'/></a>
+            <a href="https://www.linkedin.com/in/elian-rehbani-96113624b/" target='_blank'><Image src="/linkedin.svg" alt='Linkedin' className='max-lg:w-6' width={48} height={0}/></a>
+          <a href="https://github.com/ERehbani" target='_blank'><Image src="/Github-dark.svg" alt='Github' width={48} height={0} className='ml-10 w-12 max-lg:w-6' /></a>
           </div>
         </div>
       </footer>
@@ -18,4 +19,6 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;
+
+

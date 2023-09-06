@@ -1,5 +1,6 @@
 import React from 'react'
 import './globals.css'
+import Image from 'next/image'
 
 function Certifications() {
   return (
@@ -10,7 +11,8 @@ function Certifications() {
 
         <div>
             <div className='image-certificate-container'>
-                <img src="HenryCertificate.png" alt="Henry Certificate" className='image-certificate-henry'/>
+                {/* <img src="HenryCertificate.png" alt="Henry Certificate" className='image-certificate-henry'/> */}
+                <Image src="/HenryCertificate.png" alt='Henry Certificate' className='image-certificate-henry' width={666} height={0}/>
             </div>
             <div className="description-container">
                 <b className='description-certificate'>Full Stack Developer <p className='font-light'>by</p> Henry</b>
@@ -20,7 +22,8 @@ function Certifications() {
 
         <div>
             <div className='image-certificate-container'>
-                <img src="EnglishCertificate.png" alt="English Certificate" className='image-certificate-english'/>
+                {/* <img src="EnglishCertificate.png" alt="English Certificate" className='image-certificate-english'/> */}
+                <Image src="/EnglishCertificate.png" alt='English Certificate' className='image-certificate-english' width={370} height={0} />
             </div>
             <div className='description-container'>
                 <b className='description-certificate'>English B1 <p className='font-light'>by</p> EFSET</b>
