@@ -6,7 +6,7 @@ function Certifications() {
   return (
     <div>
         <div className='mt-32'>
-            <h1 className='main-title text-7xl text-center font-medium mt-20 justify-center'>Certifications</h1>
+            <h1 className='secondary-title text-7xl text-center font-medium mt-10 justify-center'>Certifications</h1>
         </div>
 
         <div>
@@ -15,7 +15,7 @@ function Certifications() {
                 <Image src="/HenryCertificate.png" alt='Henry Certificate' className='image-certificate-henry' width={666} height={0}/>
             </div>
             <div className="description-container">
-                <b className='description-certificate'>Full Stack Developer <p className='font-light'>by</p> Henry</b>
+                <b className='description-certificate'>Full Stack Developer by Henry</b>
             </div>
         </div>
 
@@ -26,7 +26,7 @@ function Certifications() {
                 <Image src="/EnglishCertificate.png" alt='English Certificate' className='image-certificate-english' width={370} height={0} />
             </div>
             <div className='description-container'>
-                <b className='description-certificate'>English B1 <p className='font-light'>by</p> EFSET</b>
+                <b className='description-certificate'>English B1 by EFSET</b>
             </div>
         </div>
     </div>

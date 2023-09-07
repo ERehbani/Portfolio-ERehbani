@@ -14,14 +14,14 @@ export default function Home() {
         <h1 className="main-title text-8xl text-center font-medium mx-auto">
           Hi. I’m Elián <br />A Full Stack Dev.
         </h1>
-        <p className="w-2/6 text-center justify-center font-light mx-auto mt-10 main-p">
+        <p className="main-p w-2/6 text-center justify-center font-light mx-auto mt-10  text-lg">
           I love designing intuitive interfaces and developing efficient
           solutions for all kinds of problems both front-end and back-end.
         </p>
       </div>
 
 
-        <div className="mb-32" id="projects"></div>
+        <div className="mb-32 max-lg:mb-1" id="projects"></div>
         <div>
           <Projects/>
         </div>

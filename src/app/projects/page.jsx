@@ -1,11 +1,13 @@
+"use client"
 import React from 'react'
 import './globals.css'
 import Image from 'next/image'
+import Link from 'next/link'
 function Projects() {
   return (
     <div>
       <div className="">
-        <h2 className="main-title h-28 flex text-7xl text-center font-medium mt-20 justify-center" id="projects">My Projects</h2>
+        <h2 className="secondary-title h-28 flex text-7xl text-center font-medium mt-20 justify-center" id="projects">My Projects</h2>
       </div>
       <div className="mt-10">
         <div className="square-show">
@@ -55,9 +57,9 @@ function Projects() {
           <p className='description-show'> I participated in the creation of a web platform based on the purchase and sale of courses in which I gained knowledge in Figma, Git Flow and managed to implement the Mercado Pago payment gateway to make purchases on the web. I was part of the Frontend section directing its web design, declaring the color palette of the platform and distribution of the components and its responsive design. Using for the creation of the same Javascript, MongoDB, ExpressJS, React JS, CSS and Tailwind</p>
 
           <div className='webGithub max-lg:justify-center max-lg:-ml-5 flex'>
-            <a target='_blank' href="https://deploy-front-end-git-main-shakkus.vercel.app/home" id="web-link"><Image src="/web.svg" alt='Web' width={40} height={0} className='links-projects w-10 justify-center mr-5' /></a>
+            <Link target='_blank' href="https://deploy-front-end-git-main-shakkus.vercel.app/home" id="web-link"><Image src="/web.svg" alt='Web' width={40} height={0} className='links-projects w-10 justify-center mr-5' /></Link>
 
-            <a href="https://github.com/Shakkus/TalentForgeFrontEnd" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></a>
+            <Link href="https://github.com/Shakkus/TalentForgeFrontEnd" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
             
           </div>
           </div>
@@ -124,8 +126,7 @@ function Projects() {
           </div>
           <p className='description-show2'>I made a landing on countries where the main points were to create a creation form in the database, search by name, detail of each country, combined filters and pagination with a clear, minimalist and visually pleasing design using Javascript, React , Redux, CSS and SQL</p>
           <div className='webGithub max-lg:justify-center max-lg:-ml-5 flex'>
-            <a href="/" target="_blank" id='web-link'><Image src="/web.svg" alt='Web' width={40} height={0} className='links-projects w-10 justify-center mr-5' /></a>
-            <a href="https://github.com/ERehbani/PI-COUNTRIES" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></a>
+            <Link href="https://github.com/ERehbani/PI-COUNTRIES" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
           </div>
           </div>
           {/* <img
@@ -145,9 +146,9 @@ function Projects() {
               <span className="tooltip1 left-14">React Native</span>
             </div>          
           </div>
-          <p className='description-show mt-8'>Application for organizing expenses by setting an initial budget, which will be monitored through the expenses that are added.</p>
+          <p className='description-show'>Application for organizing expenses by setting an initial budget, which will be monitored through the expenses that are added.</p>
           <div className='mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
-            <a href="https://github.com/ERehbani/Planificador-Gastos" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></a>
+            <Link href="https://github.com/ERehbani/Planificador-Gastos" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
             
           </div>
           </div>
@@ -183,7 +184,7 @@ function Projects() {
           </div>
           <p className='description-show mt-5'>With the functionalities of creating a new appointment with a form in Modal mode and Date Picker to set a registration date, viewing new appointments, viewing, editing and deleting them</p>
           <div className='mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
-            <a href="https://github.com/ERehbani/GestorCitas-ReactNative" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></a>
+            <Link href="https://github.com/ERehbani/GestorCitas-ReactNative" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
           </div>
           </div>
           <div className='phone-container'>
@@ -224,7 +225,7 @@ function Projects() {
           </div>
           <p className='description-show mt-10'>App in React Native using the Open Weather API to show the weather of each city applying its name and corresponding country</p>
           <div className='mt-10 max-lg:mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
-            <a href="https://github.com/ERehbani/Weather-App" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></a>
+            <Link href="https://github.com/ERehbani/Weather-App" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
           </div>
           </div>
           <div className='phone-container'>
