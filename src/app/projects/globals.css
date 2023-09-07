@@ -23,19 +23,19 @@
 .square-show-phone,
 .square-show2 {
     margin: 40px auto;
-    width: 1353px;
+    /* width: 1353px; */
     border-radius: 50px;
     background: #7e22ce2a;
     backdrop-filter: blur(32px);
     border: 1.5px solid #9747FF;
-    display: flex;
+    /* display: flex; */
     transition-duration: .3s;
 
-    @media (max-width: 1024px) {
+    /* @media (max-width: 1024px) {
         height: max-content;
         display: block;
         width: 90%;
-    }
+    } */
 }
 
 [data-theme="dark"] .square-show-phone {
