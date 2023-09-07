@@ -12,7 +12,7 @@ function Certifications() {
         <div>
             <div className='image-certificate-container'>
                 {/* <img src="HenryCertificate.png" alt="Henry Certificate" className='image-certificate-henry'/> */}
-                <Image src="/HenryCertificate.png" alt='Henry Certificate' className='image-certificate-henry' width={666} height={0}/>
+                <Image src="/HenryCertificate.PNG" alt='Henry Certificate' className='image-certificate-henry' width={666} height={0}/>
             </div>
             <div className="description-container">
                 <b className='description-certificate'>Full Stack Developer by Henry</b>
