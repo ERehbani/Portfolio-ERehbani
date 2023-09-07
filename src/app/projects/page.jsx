@@ -120,7 +120,7 @@ function Projects() {
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="Git.svg" alt="Git"/> */}
-              <Image src="/Git.svg" alt='Git' width={70} height={0} className='svg-icon'  />
+              <Image src="/git.svg" alt='Git' width={70} height={0} className='svg-icon'  />
               <span className="tooltip2" id='git2'>Git</span>
             </div>
           </div>
