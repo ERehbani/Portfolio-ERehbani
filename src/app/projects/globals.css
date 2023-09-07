@@ -8,6 +8,15 @@
     display: flex;
     transition-duration: .3s;
 
+    @media (max-width: 1024px) {
+        height: max-content;
+        display: block;
+        width: 90%;
+    }
+
+    @media (max-width: 640px) {
+        border-radius: 25px;
+    }
 
 }
 
