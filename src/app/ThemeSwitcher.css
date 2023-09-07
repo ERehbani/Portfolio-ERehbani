@@ -1,5 +1,8 @@
 /* The switch - the box around the slider */
-
+.switch {
+    border: 1px solid rgba(236, 234, 234, 0.411);
+    border-radius: 30px;
+}
 
 
 /* Hide default HTML checkbox */
