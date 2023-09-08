@@ -2,7 +2,7 @@
 .square-show-phone,
 .square-show2 {
     margin: 40px auto;
-    width: 1353px;
+    width: 95%;
     border-radius: 50px;
     display: flex;
     transition-duration: .3s;
@@ -42,7 +42,7 @@
 
 [data-theme="dark"] .square-show-phone {
     margin: 40px auto;
-    width: 1353px;
+    width: 95%;
     height: 500px;
     border-radius: 50px;
     background: rgba(217, 217, 217, 0.05);
