@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
 
-        <div className="mb-32 max-lg:mb-1" id="projects"></div>
+        <div className="mb-32" id="projects"></div>
         <div>
           <Projects/>
         </div>

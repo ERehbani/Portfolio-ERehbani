@@ -11,6 +11,7 @@
         height: max-content;
         display: block;
         width: 90%;
+        margin: 20px auto;
     }
 
     @media (max-width: 640px) {
@@ -67,7 +68,9 @@
     margin: 70px;
 
     @media (max-width: 1024px) {
-        margin: 20px 0 0 0;
+        width: 90%;
+        margin: 15px auto;
+
     }
 }
 
@@ -133,6 +136,7 @@
     @media (max-width: 640px) {
         font-size: 10px;
         margin-top: 20px;
+        text-align: start;
     }
 }
 
@@ -149,6 +153,7 @@
     @media (max-width: 640px) {
         font-size: 10px;
         margin-top: 20px;
+        text-align: start;
     }
 }
 
@@ -166,6 +171,7 @@
     @media (max-width: 640px) {
         font-size: 10px;
         margin-top: 20px;
+        text-align: start;
     }
 }
 
@@ -175,7 +181,9 @@
     font-weight: 300;
 
     @media (max-width: 1024px) {
-        width: 100%;
+        width: 90%;
+        margin: 20px auto 0 auto;
+        text-align: start;
     }
 
     @media (max-width: 640px) {
@@ -299,7 +307,7 @@
 
 .svg-icon:hover {
     transform: translateY(-5px);
-    filter: drop-shadow(10px 5px 4px #49494977);
+    filter: drop-shadow(0px 5px 10px #81699477);
 }
 
 .svg-icon {
@@ -457,4 +465,65 @@
         visibility: visible;
         pointer-events: auto;
     }
+}
+
+
+[data-theme="dark"] .icons [alt="React"] {
+    content: url('../../../public/reactjs-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Tailwind"] {
+    content: url('../../../public/tailwind-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Firebase"] {
+    content: url('../../../public/firebase-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Mercado Pago"] {
+    content: url('../../../public/mercado-pago-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Mongo DB"] {
+    content: url('../../../public/mongodb-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Git"] {
+    content: url('../../../public/git-light.png');
+}
+
+[data-theme="dark"] .icons [alt="NodeJS"] {
+    content: url('../../../public/nodejs-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Redux"] {
+    content: url('../../../public/redux-light.png');
+}
+
+[data-theme="dark"] .icons [alt="PostgreSQL"] {
+    content: url('../../../public/postgresql-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Nodemon"] {
+    content: url('../../../public/nodemon-light.png');
+}
+
+[data-theme="dark"] .icons [alt="CSS"] {
+    content: url('../../../public/css-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Axios"] {
+    content: url('../../../public/axios-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Express"] {
+    content: url('../../../public/expressjs-light.png');
+}
+
+[data-theme="dark"] .icons [alt="React Native"] {
+    content: url('../../../public/react-native-light.png');
+}
+
+[data-theme="dark"] .icons [alt="Open Weather"] {
+    content: url('../../../public/open-weather-light.png');
 }

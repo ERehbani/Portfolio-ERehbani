@@ -61,10 +61,6 @@
     }
 
     .svgIcon path {
-        fill: white;
-    }
-
-    .svgIcon path {
         fill: #0B0014;
     }
 
@@ -198,7 +194,7 @@
 
     [data-theme="light"] .navlist {
         width: 100%;
-        color: #FAE8FF;
+        color: #0B0014;
     }
 
     .navbar p {

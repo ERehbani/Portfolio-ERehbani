@@ -16,18 +16,18 @@ function Projects() {
           <div className="icons">
             <div className="div-icons">
               {/* <img className="svg-icon" src="React.svg" alt="React" /> */}
-              <Image src="/React.svg" alt='React' width={70} height={0} className='svg-icon'/>
+              <Image src="/reactjs-dark.png" alt='React' width={70} height={0} className='svg-icon'/>
               <span className="tooltip1">ReactJS</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="tailwind.svg" alt="Tailwind" /> */}
-              <Image src="/tailwind.svg" alt='Tailwind' width={87} height={0} className='svg-icon' />
-              <span className="tooltip1">TailwindCSS</span>
+              <Image src="/tailwind-dark.png" alt='Tailwind' width={70} height={0} className='svg-icon' />
+              <span className="tooltip1 left-28">TailwindCSS</span>
             </div>
            <div className="div-icons" >
              {/* <img className="svg-icon" src="firebase.svg" alt="Firebase" /> */}
-             <Image src="/firebase.svg" alt='Firebase' className='svg-icon' width={58} height={0} />
-             <span className="tooltip1" id='firebase'>Firebase</span>
+             <Image src="/firebase-dark.png" alt='Firebase' className='svg-icon' width={70} height={0} />
+             <span className="tooltip1 left-56" id='firebase'>Firebase</span>
            </div>
             <div className="div-icons" >
               {/* <img
@@ -35,22 +35,22 @@ function Projects() {
               src="mercadopago.svg"
               alt="Mercado Pago"
             /> */}
-            <Image src="/mercadopago.svg" alt='Mercado Pago' width={90} height={0} className='svg-icon' />
-            <span className="tooltip1" id='mp'>Mercado Pago</span>
+            <Image src="/mercado-pago-dark.png" alt='Mercado Pago' width={70} height={0} className='svg-icon' />
+            <span className="tooltip1 left-72" id='mp'>Mercado Pago</span>
             </div>
             <div className="div-icons" >
               {/* <img className="svg-icon" src="mongodb.svg" alt="Mongo DB" /> */}
-              <Image src="/mongodb.svg" alt='Mongo DB' width={45} height={0} className='svg-icon' />
+              <Image src="/mongodb-dark.png" alt='Mongo DB' width={70} height={0} className='svg-icon' />
               <span className="tooltip1" id='mongodb'>MongoDB</span>
             </div>
             <div className="div-icons" >
               {/* <img className="svg-icon" src="Git.svg" alt="Git" /> */}
-              <Image src="/git.svg" alt='Git' width={74} height={0} className='svg-icon' />
+              <Image src="/git-dark.png" alt='Git' width={70} height={0} className='svg-icon' />
               <span className="tooltip1" id='git'>Git</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="Nodejs.svg" alt="NodeJS" /> */}
-              <Image src="/Nodejs.svg" alt='NodeJS' width={69} height={0} className='svg-icon' />
+              <Image src="/nodejs-dark.png" alt='NodeJS' width={70} height={0} className='svg-icon' />
               <span className="tooltip1">NodeJS</span>
             </div>
           </div>
@@ -80,47 +80,47 @@ function Projects() {
           <div className="icons">
             <div className='div-icons'>
               {/* <img className="svg-icon" src="React.svg" alt="React" /> */}
-              <Image src="/React.svg" alt='React' width={70} height={0} className='svg-icon'/>
+              <Image src="/reactjs-dark.png" alt='React' width={70} height={0} className='svg-icon'/>
             <span className="tooltip2">React</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="Redux.svg" alt="Redux" /> */}
-              <Image src="/Redux.svg" alt='Redux' width={69} height={0} className='svg-icon' />
+              <Image src="/redux-dark.png" alt='Redux' width={70} height={0} className='svg-icon' />
               <span className="tooltip2">Redux</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="PostgreSQL.svg" alt="PostgreSQL" /> */}
-              <Image src="/PostgreSQL.svg" alt='PostgreSQL' width={68} height={0} className='svg-icon' />
+              <Image src="/postgresql-dark.png" alt='PostgreSQL' width={68} height={0} className='svg-icon' />
               <span className="tooltip2">SQL</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="Nodejs.svg" alt="NodeJS" /> */}
-              <Image src="/Nodejs.svg" alt='NodeJS' width={69} height={0} className='svg-icon' />
+               <Image src="/nodejs-dark.png" alt='NodeJS' width={70} height={0} className='svg-icon' />
               <span className="tooltip2">NodeJS</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="Nodemon.svg" alt="Nodemon" /> */}
-              <Image src="/Nodemon.svg" alt='Nodemon' width={70} height={0} className='svg-icon' />
+              <Image src="/nodemon-dark.png" alt='Nodemon' width={70} height={0} className='svg-icon' />
               <span className="tooltip2">Nodemon</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="CSS.svg" alt="CSS" /> */}
-              <Image src="/CSS.svg" alt='CSS' width={70} height={0} className='svg-icon' />
+              <Image src="/css-dark.png" alt='CSS' width={70} height={0} className='svg-icon' />
               <span className="tooltip2">CSS</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="axios.svg" alt="Axios" /> */}
-              <Image src="/axios.svg" alt='Axios' width={70} height={0} className='svg-icon' />
+              <Image src="/axios-dark.png" alt='Axios' width={70} height={0} className='svg-icon' />
               <span className="tooltip2">Axios</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="express-color.svg" alt="ExpressJS" /> */}
-              <Image src="/express-color.svg" alt='Express' width={70} height={0} className='svg-icon' />
+              <Image src="/expressjs-dark.png" alt='Express' width={70} height={0} className='svg-icon' />
               <span className="tooltip2" id='express'>ExpressJS</span>
             </div>
             <div className="div-icons">
               {/* <img className="svg-icon" src="Git.svg" alt="Git"/> */}
-              <Image src="/git.svg" alt='Git' width={70} height={0} className='svg-icon'  />
+              <Image src="/git-dark.png" alt='Git' width={70} height={0} className='svg-icon'  />
               <span className="tooltip2" id='git2'>Git</span>
             </div>
           </div>
@@ -142,8 +142,8 @@ function Projects() {
           <div className="icons">
             <div className="div-icons">
               {/* <img className="svg-icon w-20" src="React-Native.png" alt="React Native" /> */}
-              <Image src="/React-Native.png" alt='React Native' width={80} height={0} className='svg-icon w-20' />
-              <span className="tooltip1 left-14">React Native</span>
+              <Image src="/react-native-dark.png" alt='React Native' width={70} height={0} className='svg-icon w-20' />
+              <span className="tooltip1 left-9">React Native</span>
             </div>          
           </div>
           <p className='description-show'>Application for organizing expenses by setting an initial budget, which will be monitored through the expenses that are added.</p>
@@ -178,8 +178,8 @@ function Projects() {
             <h2 className="title-show">Administrator of appointments in React Native</h2>
           <div className="icons">
             <div className="div-icons">
-              <Image src="/React-Native.png" alt='React Native' width={80} height={0} className='svg-icon w-20' />
-              <span className="tooltip1 left-14">React Native</span>
+              <Image src="/react-native-dark.png" alt='React Native' width={70} height={0} className='svg-icon w-20' />
+              <span className="tooltip1 left-9">React Native</span>
             </div>            
           </div>
           <p className='description-show mt-5'>With the functionalities of creating a new appointment with a form in Modal mode and Date Picker to set a registration date, viewing new appointments, viewing, editing and deleting them</p>
@@ -213,13 +213,13 @@ function Projects() {
             <h2 className="title-show">Weather App in React Native</h2>
           <div className="icons">
             <div className="div-icons mt-3">
-              <Image src="/React-Native.png" alt='React Native' width={80} height={0} className='svg-icon w-20' />
-              <span className="tooltip1 -mt-16 left-14">React Native</span>
+              <Image src="/react-native-dark.png" alt='React Native' width={70} height={0} className='svg-icon w-20' />
+              <span className="tooltip1 -mt-16 left-10">React Native</span>
             </div> 
-            <div className="div-icons max-lg:mt-3 max-lg:-ml-3">
+            <div className="div-icons mt-3 max-lg:mt-3 max-lg:-ml-3">
               {/* <img className="svg-icon w-24" src="OpenWeather.svg" alt="Open weather" /> */}
-              <Image src="/OpenWeather.svg" alt='Open Weather' width={80} height={0} className='svg-icon w-24' />
-              <span className="tooltip1 -mt-16 left-32">Open Weather API</span>
+              <Image src="/open-weather-dark.png" alt='Open Weather' width={70} height={0} className='svg-icon w-20' />
+              <span className="tooltip1 -mt-16 left-28">Open Weather API</span>
             </div>
             
           </div>

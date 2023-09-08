@@ -85,7 +85,9 @@
         height: 20px;
     }
 
-    .divText {}
+    #vscode img {
+        width: 55px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -130,7 +132,9 @@
         justify-content: center;
     }
 
-
+    #figma img {
+        width: 45px;
+    }
 }
 
 @media (min-width: 1024px) {

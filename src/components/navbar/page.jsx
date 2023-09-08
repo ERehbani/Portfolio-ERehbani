@@ -48,7 +48,7 @@ function Navbar() {
                 </svg>
               </span>
             </Link>
-            <p className="text">Projects</p>
+            <p className="ml-1 text">Projects</p>
           </button>
 
           <button className="bookmarkBtn">
