@@ -138,6 +138,18 @@
 
 [data-theme="dark"] .description-show2 {
     margin-top: 50px;
+
+    @media (max-width: 1024px) {
+        width: 90%;
+        margin: 20px auto 0 auto;
+        text-align: center;
+
+    }
+
+    @media (max-width: 640px) {
+        font-size: 10px;
+        margin-top: 20px;
+    }
 }
 
 [data-theme="light"] .description-show2 {
@@ -145,7 +157,15 @@
     margin-top: 50px;
 
     @media (max-width: 1024px) {
-        margin-top: 10px;
+        width: 90%;
+        margin: 20px auto 0 auto;
+        text-align: center;
+
+    }
+
+    @media (max-width: 640px) {
+        font-size: 10px;
+        margin-top: 20px;
     }
 }
 
@@ -344,6 +364,16 @@
     transition-duration: 1.3s;
     height: 105px;
     margin-top: 40px;
+
+    @media (max-width: 640px) {
+        font-size: 40px;
+        height: 43px;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 40px;
+        height: 43px;
+    }
 }
 
 

@@ -1,6 +1,5 @@
 [data-theme="dark"] .navbar {
     position: fixed;
-
     border: 1.5px solid rgba(236, 234, 234, 0.411);
     border-radius: 999px;
     background: rgba(217, 217, 217, 0.05);
@@ -11,7 +10,7 @@
 
 [data-theme="light"] .navbar {
     position: fixed;
-    margin: -145px 33%;
+    /* margin: -145px 33%; */
     border: 1.5px solid #9747FF;
     border-radius: 999px;
     background: rgba(126, 34, 206, 0.151);
@@ -184,7 +183,7 @@
 }
 
 @media (max-width: 1024px) {
-    [data-theme="dark"] .navbar {
+    .navbar {
         position: fixed;
         width: 75%;
         left: 50%;
@@ -192,11 +191,6 @@
         transform: translateX(-50%);
     }
 
-    [data-theme="light"] .navbar {
-        width: 75%;
-        margin-top: -145px;
-        margin-left: 50px;
-    }
 
     [data-theme="dark"] .navlist {
         width: 100%;
