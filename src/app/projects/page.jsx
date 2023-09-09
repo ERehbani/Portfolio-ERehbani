@@ -134,7 +134,9 @@ function Projects() {
             src="web_api_countries.png"
             alt="Countries API"
           /> */}
-          <Image src="/web_api_countries.png" alt='Countries API' width={600} height={0} className='image-show' />
+          <div className="image-container">
+            <Image src="/web_api_countries.png" alt='Countries API' width={600} height={0} className='image-show' />
+          </div>
         </div>
         <div className="square-show-phone">
           <div className='info-show'>
@@ -173,6 +175,7 @@ function Projects() {
           <Image src="/Planificator4.webp" alt='Planificator' width={163} height={0} className='phone-show' />
           </div>
         </div>
+        
         <div className="square-show-phone">
           <div className='info-show'>
             <h2 className="title-show">Administrator of appointments in React Native</h2>

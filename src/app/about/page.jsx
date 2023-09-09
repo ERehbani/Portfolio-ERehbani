@@ -14,11 +14,10 @@ useEffect(() => {
   const consultWeather = async() => {
       const appid = 'ae222c77a8713a698205fe736baa9e5b';
   try {
-    const { data } = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=mar%20del%20plata,argentina&appid=${appid}`);
-    console.log(data); // Agrega esta línea para verificar la respuesta
+    const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=mar%20del%20plata,argentina&appid=${appid}`);
+
     setResult(data);
   } catch (error) {
-    console.log(error);
   }
   }
   consultWeather()
@@ -27,9 +26,7 @@ useEffect(() => {
 const { main } = result;
 
 if (main && main.temp) {
-  console.log(main.temp);
 } else {
-  console.log("No se pudo obtener la temperatura");
 }
   
 
