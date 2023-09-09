@@ -274,7 +274,7 @@
 
 .phone-show {
     transition: transform .5s;
-    width: 55%;
+    width: 30%;
     margin: 50px 20px;
 
     @media (max-width: 1024px) {
