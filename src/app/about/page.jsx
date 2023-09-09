@@ -32,9 +32,8 @@ if (main && main.temp) {
 
 const kelvin = 273.15;
 let weatherIcon = null;
-
 if (result && result.weather && result.weather.length > 0) {
-  weatherIcon = `http://openweathermap.org/img/w/${result.weather[0].icon}.png`;
+  weatherIcon = `https://openweathermap.org/img/w/${result.weather[0].icon}.png`;
 }
 
 
@@ -187,7 +186,7 @@ return (
   working from {result.main ? parseInt(result.main.temp - kelvin) : ""}°C
   <b className="flex align-center max-lg:text-lg max-lg:w-fit my-0 mx-auto">
     Mar del Plata
-    {weatherIcon && (<picture><img className="weatherIcon" src={result.main && weatherIcon} alt="Weather Icon" /></picture>)}, Argentina
+    {weatherIcon && (<picture><img className="weatherIcon" src={weatherIcon} alt="." /></picture>)}, Argentina
     
   </b>
 </h3>
