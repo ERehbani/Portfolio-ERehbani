@@ -9,7 +9,7 @@ function Projects() {
       <div className="">
         <h2 className="secondary-title h-28 flex text-7xl text-center font-medium mt-20 justify-center" id="projects">My Projects</h2>
       </div>
-      <div className="mt-10">
+      <div className="">
         <div className="square-show">
           <div className='info-show'>
             <h2 className="title-show flex">Talent Forge, a course platform </h2>
