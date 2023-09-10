@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className='footer mt-32 max-lg:mt-16'>
       <footer>
-        <div className='items-center flex justify-around max-lg:py-7 py-14'>
+        <div className='items-center flex justify-around max-lg:py-7 py-14 max-sm:text-xs'>
           <h1 className='text-white font-thin'>Elian Rehbani</h1>
           <h2 className='text-white font-thin'>Made with NextJS</h2>
           <div className='flex justify-between'>
