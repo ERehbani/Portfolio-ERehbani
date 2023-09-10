@@ -366,7 +366,7 @@
     -webkit-text-fill-color: transparent;
     transition-duration: 1.3s;
     height: 105px;
-    margin-top: 128px;
+    margin-top: 120px;
 
     @media (max-width: 640px) {
         font-size: 40px;
