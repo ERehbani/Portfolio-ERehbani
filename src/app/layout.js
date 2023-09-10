@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta property="og:image" content="https://portfolio-e-rehbani.vercel.app//open_graph.png"></meta>
-        <meta property="og:title" content="Elian Full Stack Dev"></meta>
+        <meta property="og:title" content="Elian Rehbani | Full Stack Dev"></meta>
         <meta property="og:description" content="Elian Rehbani | Portfolio"></meta>
         <meta property="twitter:image" content="https://portfolio-e-rehbani.vercel.app//open_graph.png"></meta>
         <meta property="twitter:title" content="Elian Full Stack Dev"></meta>

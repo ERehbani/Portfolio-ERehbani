@@ -61,7 +61,7 @@ function Projects() {
 
             <Link target='_blank' href="https://deploy-front-end-git-main-shakkus.vercel.app/home" id="web-link" className='mr-5'>
               <div className="button-visit">
-              <Image src="/web-light.svg" alt='Web' width={36} height={0} className='links-projects w-9 justify-center mr-2 max-sm:mr-0 max-sm:-mt-1' /><p className='mt-1'>Visit</p></div></Link>
+              <Image src="/web-light.svg" alt='Web' width={36} height={0} className='links-projects w-9 justify-center mr-2 max-sm:mr-1 max-sm:-mt-1' /><p className='mt-1'>Visit</p></div></Link>
 
             <Link href="https://github.com/Shakkus/TalentForgeFrontEnd" target="_blank" id='github-link'>
               <div className="button-visit">

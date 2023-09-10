@@ -23,6 +23,16 @@ body {
   right: -0px;
   transition-duration: 1.3s;
   z-index: -1;
+
+  @media (max-width: 1024px) {
+    width: 447.5px;
+    height: 447.5px;
+    border-radius: 447.5px;
+    top: -250px;
+    right: 0px;
+    filter: blur(80px);
+    opacity: 0.1;
+  }
 }
 
 [data-theme="dark"] .background {
@@ -38,6 +48,20 @@ body {
   right: -0px;
   transition-duration: 1.3s;
   z-index: -1;
+
+  @media (max-width: 1024px) {
+    width: 447.5px;
+    height: 447.5px;
+    border-radius: 447.5px;
+    top: -250px;
+    right: -20px;
+    filter: blur(80px);
+    opacity: 0.1;
+  }
+
+  @media (max-width: 640px) {
+    right: -100px;
+  }
 }
 
 .background2 {
@@ -52,6 +76,15 @@ body {
   bottom: -550px;
   transition-duration: 1.3s;
   z-index: -1;
+
+  @media (max-width: 1024px) {
+    width: 447.5px;
+    height: 447.5px;
+    border-radius: 447.5px;
+    bottom: -250px;
+    filter: blur(80px);
+    opacity: 0.1;
+  }
 }
 
 [data-theme="dark"] .background2 {
@@ -66,6 +99,15 @@ body {
   bottom: -550px;
   transition-duration: 1.3s;
   z-index: -1;
+
+  @media (max-width: 1024px) {
+    width: 447.5px;
+    height: 447.5px;
+    border-radius: 447.5px;
+    bottom: -250px;
+    filter: blur(80px);
+    opacity: 0.1;
+  }
 }
 
 [data-theme="light"] .main-title,

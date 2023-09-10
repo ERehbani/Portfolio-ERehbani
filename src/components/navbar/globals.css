@@ -14,10 +14,10 @@
     margin-top: -180px;
     border: 1.5px solid #9747FF;
     border-radius: 999px;
-    background: rgba(126, 34, 206, 0.151);
+    background: #7e22ce0a;
     backdrop-filter: blur(32px);
     z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(105, 50, 150, 0.178) 0px 5px 15px;
 }
 
 @media (min-width: 1024px) {

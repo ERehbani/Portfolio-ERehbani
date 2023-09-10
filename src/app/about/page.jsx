@@ -105,12 +105,6 @@ const songsOnRepeat = [
     link: "https://open.spotify.com/intl-es/track/2H1qec30juJRXHbnvYzG85?si=2614d27b55ed4371"
   },
   {
-    track: "CAEN LAS ESTRELLAS",
-    artist: "Nicki Nicole & YSY A",
-    icon: "https://i.scdn.co/image/ab67616d00001e026e8a008910b112a83be0de44",
-    link: "https://open.spotify.com/intl-es/track/3M4netHXzaZnamkdGr72xb?si=a784c121d98c4576"
-  },
-  {
     track: "Live in the Moment",
     artist: "Portugal. The Man",
     icon: "https://i.scdn.co/image/ab67616d00001e02af52c228c9619ff6298b08cd",
@@ -184,7 +178,7 @@ return (
           <h3 className="text2">
   A <b>Full Stack Developer Junior</b> <br />
   working from {result.main ? parseInt(result.main.temp - kelvin) : ""}°C
-  <p className="flex align-center max-lg:text-lg max-lg:w-fit my-0 mx-auto">
+  <p className="flex align-center max-lg:text-lg max-lg:w-fit my-0 mx-auto max-sm:text-sm">
     Mar del Plata
     {weatherIcon && (<picture><img className="weatherIcon" src={weatherIcon} alt="." /></picture>)}, Argentina 🇦🇷
     

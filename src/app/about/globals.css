@@ -57,38 +57,7 @@
     width: 70px;
 }
 
-@media (max-width: 640px) {
-    .imageAbout {
-        width: 12rem;
-        height: 12rem;
-        border-top-left-radius: 9999px;
-        border-top-right-radius: 9999px;
-        justify-content: center;
-        margin: 0 auto;
-    }
 
-    .text1 {
-        width: fit-content;
-        font-size: 20px;
-    }
-
-    .text2 {
-        font-size: 15px;
-    }
-
-    .text3 {
-        width: 300px;
-        font-size: 10px;
-    }
-
-    .weatherIcon {
-        height: 20px;
-    }
-
-    #vscode img {
-        width: 55px;
-    }
-}
 
 @media (max-width: 1024px) {
 
@@ -117,12 +86,15 @@
     }
 
     .text3 {
-        font-size: 10px;
-        margin: 0 auto;
+        font-size: 12px;
+        /* display: flex; */
+        margin: 10px 40px;
+        font-weight: 300;
+        text-align: center;
     }
 
     .weatherIcon {
-        height: 50px;
+        height: 30px;
     }
 
     .divText {
@@ -136,6 +108,8 @@
         width: 45px;
     }
 }
+
+
 
 @media (min-width: 1024px) {
 
@@ -179,6 +153,42 @@
 
 }
 
+@media (max-width: 640px) {
+    .imageAbout {
+        width: 12rem;
+        height: 12rem;
+        border-top-left-radius: 9999px;
+        border-top-right-radius: 9999px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .text1 {
+        width: fit-content;
+        font-size: 20px;
+    }
+
+    .text2 {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .text3 {
+        width: 130%;
+        font-size: 12px;
+        display: flex;
+        margin: 10px 20px;
+    }
+
+    .weatherIcon {
+        height: 20px;
+    }
+
+    #vscode img {
+        width: 55px;
+    }
+}
+
 .onRepeat {
     display: flex;
     height: fit-content;
@@ -189,6 +199,10 @@
     @media (max-width: 1024px) {
         width: 16rem;
         margin: 0 auto 30px auto;
+    }
+
+    @media (max-width: 640px) {
+        width: 12rem;
     }
 }
 
@@ -242,7 +256,7 @@
 }
 
 .onRepeat-info-text {
-    margin-left: 20px;
+    margin: 5px auto 5px 20px;
 
     @media (max-width: 1024px) {
         margin-left: 10px;

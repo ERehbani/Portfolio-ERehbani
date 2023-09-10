@@ -33,7 +33,7 @@
 [data-theme="light"] .square-show,
 .square-show-phone,
 .square-show2 {
-    background: #7e22ce2a;
+    background: #7e22ce0a;
     backdrop-filter: blur(32px);
     border: 1.5px solid #9747FF;
     /* display: flex; */
@@ -146,7 +146,7 @@
     }
 
     @media (max-width: 640px) {
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 20px;
         text-align: start;
     }
@@ -163,7 +163,7 @@
     }
 
     @media (max-width: 640px) {
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 20px;
         text-align: start;
     }
@@ -181,7 +181,7 @@
     }
 
     @media (max-width: 640px) {
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 20px;
         text-align: start;
     }
@@ -199,7 +199,7 @@
     }
 
     @media (max-width: 640px) {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
@@ -551,6 +551,7 @@
     border-radius: 25px;
     font-size: 16px;
 
+
     @media (max-width: 1024px) {
         font-size: 16px;
         padding: 14px 22px;
@@ -559,6 +560,8 @@
     @media (max-width: 640px) {
         font-size: 12px;
         padding: 8px 12px;
+        border-radius: 12px;
+        height: 45px;
     }
 }
 
