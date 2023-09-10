@@ -22,9 +22,6 @@
         border-radius: 25px;
     }
 
-
-
-
 }
 
 [data-theme="dark"] .square-show {
@@ -349,13 +346,13 @@
     }
 }
 
-[data-theme="dark"] #github-link img {
+[data-theme="light"] #github-link img {
     content: url('../../../public/Github-dark.svg');
     height: fit-content;
 }
 
 [data-theme="light"] #web-link img {
-    content: url('../../../public/web-light.svg');
+    content: url('../../../public/web.svg');
 }
 
 [data-theme="light"] .icons [alt="ExpressJS"] {
@@ -545,4 +542,34 @@
 [data-theme="dark"] .icons [alt="Open Weather"] {
     content: url('../../../public/open-weather-light.png');
     width: 70px;
+}
+
+
+.button-visit {
+    display: flex;
+    padding: 16px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+
+    @media (max-width: 1024px) {
+        font-size: 16px;
+        padding: 14px 22px;
+    }
+
+    @media (max-width: 640px) {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+[data-theme="dark"] .button-visit {
+    background-color: #FAE8FF;
+    color: #0B0014;
+    border: 1px solid rgba(236, 234, 234, 0.411);
+}
+
+
+[data-theme="light"] .button-visit {
+    color: #FAE8FF;
+    background-color: #0B0014;
 }

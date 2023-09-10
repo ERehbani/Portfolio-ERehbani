@@ -1,11 +1,13 @@
 .image-certificate-henry {
     width: 750px;
     transition: all .5s;
+    border-radius: 4px;
 }
 
 .image-certificate-english {
     width: 350px;
     transition: all .5s;
+    border-radius: 4px;
 }
 
 .image-certificate-henry:hover,

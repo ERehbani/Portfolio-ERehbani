@@ -11,7 +11,7 @@ const prompt = Prompt({
 });
 
 export const metadata = {
-  title: "Elian's portfolio",
+  title: "Elian Rehbani | Portfolio",
   description: "Elian's portfolio created with NextJS",
   keywords: "Portfolio, Elian, Full Stack developer, Front end developer, Back end developer, Henry"
   // AGUANTE EL TOTK

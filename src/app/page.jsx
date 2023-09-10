@@ -9,7 +9,7 @@ import Contact from "./contact/page";
 export default function Home() {
   return (
     <div className="h-36">
-      <div className="mt-40 mx-auto">
+      <div className="mt-52 mx-auto">
 
         <h1 className="main-title text-8xl text-center font-medium mx-auto">
           Hi. I’m Elián <br />A Full Stack Dev.

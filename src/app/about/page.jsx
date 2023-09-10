@@ -186,7 +186,7 @@ return (
   working from {result.main ? parseInt(result.main.temp - kelvin) : ""}°C
   <p className="flex align-center max-lg:text-lg max-lg:w-fit my-0 mx-auto">
     Mar del Plata
-    {weatherIcon && (<picture><img className="weatherIcon" src={weatherIcon} alt="." /></picture>)}, Argentina
+    {weatherIcon && (<picture><img className="weatherIcon" src={weatherIcon} alt="." /></picture>)}, Argentina 🇦🇷
     
   </p>
 </h3>
@@ -196,7 +196,7 @@ return (
           basics with NodeJS and then taking care of the Front especially with
           ReactJS which gave me the possibility to create both individual and
           group projects. Likewise, taking advantage of ReactJS tools, I am
-          expanding to mobile with React Native
+          expanding to mobile with React Native.
         </h3>
         </div>
       </div>

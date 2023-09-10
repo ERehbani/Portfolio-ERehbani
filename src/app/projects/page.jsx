@@ -57,9 +57,15 @@ function Projects() {
           <p className='description-show'> I participated in the creation of a web platform based on the purchase and sale of courses in which I gained knowledge in Figma, Git Flow and managed to implement the Mercado Pago payment gateway to make purchases on the web. I was part of the Frontend section directing its web design, declaring the color palette of the platform and distribution of the components and its responsive design. Using for the creation of the same Javascript, MongoDB, ExpressJS, React JS, CSS and Tailwind</p>
 
           <div className='webGithub max-lg:justify-center max-lg:-ml-5 flex'>
-            <Link target='_blank' href="https://deploy-front-end-git-main-shakkus.vercel.app/home" id="web-link"><Image src="/web.svg" alt='Web' width={40} height={0} className='links-projects w-10 justify-center mr-5' /></Link>
+            {/* <Link target='_blank' href="https://deploy-front-end-git-main-shakkus.vercel.app/home" id="web-link"><Image src="/web.svg" alt='Web' width={40} height={0} className='links-projects w-10 justify-center mr-5' />Visit</Link> */}
 
-            <Link href="https://github.com/Shakkus/TalentForgeFrontEnd" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
+            <Link target='_blank' href="https://deploy-front-end-git-main-shakkus.vercel.app/home" id="web-link" className='mr-5'>
+              <div className="button-visit">
+              <Image src="/web-light.svg" alt='Web' width={36} height={0} className='links-projects w-9 justify-center mr-2 max-sm:mr-0 max-sm:-mt-1' /><p className='mt-1'>Visit</p></div></Link>
+
+            <Link href="https://github.com/Shakkus/TalentForgeFrontEnd" target="_blank" id='github-link'>
+              <div className="button-visit">
+              <Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center mr-2' /><p className='mt-1'>View code</p></div></Link>
             
           </div>
           </div>
@@ -126,7 +132,9 @@ function Projects() {
           </div>
           <p className='description-show2'>I made a landing on countries where the main points were to create a creation form in the database, search by name, detail of each country, combined filters and pagination with a clear, minimalist and visually pleasing design using Javascript, React , Redux, CSS and SQL</p>
           <div className='webGithub max-lg:justify-center max-lg:-ml-5 flex'>
-            <Link href="https://github.com/ERehbani/PI-COUNTRIES" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
+            <Link href="https://github.com/ERehbani/PI-COUNTRIES" target="_blank" id='github-link'>
+              <div className="button-visit">
+              <Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center mr-2' /><p className='mt-1'>View code</p></div></Link>
           </div>
           </div>
           {/* <img
@@ -150,7 +158,9 @@ function Projects() {
           </div>
           <p className='description-show'>Application for organizing expenses by setting an initial budget, which will be monitored through the expenses that are added.</p>
           <div className=' webGithub mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
-            <Link href="https://github.com/ERehbani/Planificador-Gastos" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
+            <Link href="https://github.com/ERehbani/Planificador-Gastos" target="_blank" id='github-link'>
+              <div className="button-visit">
+              <Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center mr-2' /><p className='mt-1'>View code</p></div></Link>
             
           </div>
           </div>
@@ -187,7 +197,9 @@ function Projects() {
           </div>
           <p className='description-show mt-5'>With the functionalities of creating a new appointment with a form in Modal mode and Date Picker to set a registration date, viewing new appointments, viewing, editing and deleting them</p>
           <div className='webGithub mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
-            <Link href="https://github.com/ERehbani/GestorCitas-ReactNative" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
+            <Link href="https://github.com/ERehbani/GestorCitas-ReactNative" target="_blank" id='github-link'>
+              <div className="button-visit">
+              <Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center mr-2' /><p className='mt-1'>View code</p></div></Link>
           </div>
           </div>
           <div className='phone-container'>
@@ -228,7 +240,9 @@ function Projects() {
           </div>
           <p className='description-show mt-10'>App in React Native using the Open Weather API to show the weather of each city applying its name and corresponding country</p>
           <div className='webGithub mt-10 max-lg:mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
-            <Link href="https://github.com/ERehbani/Weather-App" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
+            <Link href="https://github.com/ERehbani/Weather-App" target="_blank" id='github-link'>
+              <div className="button-visit">
+              <Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center mr-2' /><p className='mt-1'>View code</p></div></Link>
           </div>
           </div>
           <div className='phone-container'>

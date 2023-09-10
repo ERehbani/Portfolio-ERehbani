@@ -22,7 +22,7 @@ function ThemeSwitcher() {
     // }
 
     return (
-        <div>
+        <div className='switch-container'>
         <label className="switch">
           <input type="checkbox" onClick={toggleTheme} readOnly={theme === 'dark'}/>
           <span className="slider"></span>

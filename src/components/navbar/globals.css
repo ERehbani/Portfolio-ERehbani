@@ -1,5 +1,6 @@
 [data-theme="dark"] .navbar {
     position: fixed;
+    margin-top: -180px;
     border: 1.5px solid rgba(236, 234, 234, 0.411);
     border-radius: 999px;
     background: rgba(217, 217, 217, 0.05);
@@ -10,7 +11,7 @@
 
 [data-theme="light"] .navbar {
     position: fixed;
-    /* margin: -145px 33%; */
+    margin-top: -180px;
     border: 1.5px solid #9747FF;
     border-radius: 999px;
     background: rgba(126, 34, 206, 0.151);
