@@ -69,7 +69,7 @@ function Projects() {
             src="Talent_forge.png"
             alt="Talent Forge"
           /> */}
-          <Image src="/Talent_forge.png" alt='Talent Forge' width={600} height={450} className='image-show' />
+          <Image src="/Talent_forge.png" alt='Talent Forge' width={600} height={0} className='image-show' />
           </div>
 
           
@@ -144,12 +144,12 @@ function Projects() {
           <div className="icons">
             <div className="div-icons">
               {/* <img className="svg-icon w-20" src="React-Native.png" alt="React Native" /> */}
-              <Image src="/react-native-dark.png" alt='React Native' width={70} height={0} className='svg-icon w-20' />
+              <Image src="/react-native-dark.png" alt='React Native' width={70} height={0} className='svg-icon' />
               <span className="tooltip1 left-9">React Native</span>
             </div>          
           </div>
           <p className='description-show'>Application for organizing expenses by setting an initial budget, which will be monitored through the expenses that are added.</p>
-          <div className='mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
+          <div className=' webGithub mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
             <Link href="https://github.com/ERehbani/Planificador-Gastos" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
             
           </div>
@@ -181,12 +181,12 @@ function Projects() {
             <h2 className="title-show">Administrator of appointments in React Native</h2>
           <div className="icons">
             <div className="div-icons">
-              <Image src="/react-native-dark.png" alt='React Native' width={70} height={0} className='svg-icon w-20' />
+              <Image src="/react-native-dark.png" alt='React Native' width={70} height={0} className='svg-icon' />
               <span className="tooltip1 left-9">React Native</span>
             </div>            
           </div>
           <p className='description-show mt-5'>With the functionalities of creating a new appointment with a form in Modal mode and Date Picker to set a registration date, viewing new appointments, viewing, editing and deleting them</p>
-          <div className='mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
+          <div className='webGithub mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
             <Link href="https://github.com/ERehbani/GestorCitas-ReactNative" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
           </div>
           </div>
@@ -216,18 +216,18 @@ function Projects() {
             <h2 className="title-show">Weather App in React Native</h2>
           <div className="icons">
             <div className="div-icons mt-3">
-              <Image src="/react-native-dark.png" alt='React Native' width={70} height={0} className='svg-icon w-20' />
+              <Image src="/react-native-dark.png" alt='React Native' width={70} height={0} className='svg-icon' />
               <span className="tooltip1 -mt-16 left-10">React Native</span>
             </div> 
             <div className="div-icons mt-3 max-lg:mt-3 max-lg:-ml-3">
               {/* <img className="svg-icon w-24" src="OpenWeather.svg" alt="Open weather" /> */}
-              <Image src="/open-weather-dark.png" alt='Open Weather' width={70} height={0} className='svg-icon w-20' />
+              <Image src="/open-weather-dark.png" alt='Open Weather' width={70} height={0} className='svg-icon' />
               <span className="tooltip1 -mt-16 left-28">Open Weather API</span>
             </div>
             
           </div>
           <p className='description-show mt-10'>App in React Native using the Open Weather API to show the weather of each city applying its name and corresponding country</p>
-          <div className='mt-10 max-lg:mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
+          <div className='webGithub mt-10 max-lg:mt-5 max-lg:justify-center max-lg:-ml-5 flex'>
             <Link href="https://github.com/ERehbani/Weather-App" target="_blank" id='github-link'><Image src="/Github.svg" alt='Github' width={36} height={0} className='links-projects w-9 justify-center' /></Link>
           </div>
           </div>

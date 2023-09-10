@@ -182,21 +182,23 @@ return (
       <div className="divText">
         <h1 className="text1">Hello, I'm Elian</h1>
           <h3 className="text2">
-  A Full Stack Developer Junior <br />
+  A <b>Full Stack Developer Junior</b> <br />
   working from {result.main ? parseInt(result.main.temp - kelvin) : ""}°C
-  <b className="flex align-center max-lg:text-lg max-lg:w-fit my-0 mx-auto">
+  <p className="flex align-center max-lg:text-lg max-lg:w-fit my-0 mx-auto">
     Mar del Plata
     {weatherIcon && (<picture><img className="weatherIcon" src={weatherIcon} alt="." /></picture>)}, Argentina
     
-  </b>
+  </p>
 </h3>
-        <h3 className="text3">
+        <div className="max-lg:w-8/12 max-lg:my-0 max-lg:mx-auto max-sm:mx-0">
+          <h3 className="text3">
           I started my path as a Full Stack programmer in 2023 learning the
           basics with NodeJS and then taking care of the Front especially with
           ReactJS which gave me the possibility to create both individual and
           group projects. Likewise, taking advantage of ReactJS tools, I am
           expanding to mobile with React Native
         </h3>
+        </div>
       </div>
     </div>
 

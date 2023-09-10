@@ -33,13 +33,23 @@
     color: #0B0014;
 }
 
+@media (max-width: 1024px) {
+    .image-certificate-henry {
+        width: 90%;
+    }
+
+    .image-certificate-english {
+        width: 50%;
+    }
+}
+
 @media (max-width: 640px) {
     .image-certificate-henry {
         width: 340px;
     }
 
     .image-certificate-english {
-        width: 300px;
+        width: 80%;
     }
 }
 
