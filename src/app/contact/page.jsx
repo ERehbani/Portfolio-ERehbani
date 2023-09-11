@@ -24,7 +24,17 @@ function Contact() {
       <p className="flex">elianrhbn@gmail.com</p>
       </Link>
     </div>
+
     </div>
+     <div className="download">
+       <h3 className="download-title">View CV</h3>
+    <div className="button-download-container">
+      <div className="buttons-container">
+        <Link href="/CV_ES.pdf" target="_blank" className="button-download">ES</Link>
+        <Link href="/CV_EN.pdf" target="_blank" className="button-download">EN</Link>
+      </div>
+    </div>
+     </div>
   </div>;
 }
 
