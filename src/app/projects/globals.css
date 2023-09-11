@@ -366,7 +366,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition-duration: 1.3s;
-    height: max-content;
+    height: 77px;
     margin-top: 120px;
 
     @media (max-width: 640px) {
