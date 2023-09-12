@@ -330,3 +330,7 @@
     background-color: #0B0014;
     color: #FAE8FF;
 }
+
+[data-theme="light"] #file {
+    content: url('../../../public/file-white.svg');
+}

@@ -226,6 +226,7 @@ function About() {
                     width={20}
                     height={0}
                     className="mr-2"
+                    id="file"
                   />
                   View CV in english
                 </Link>
@@ -239,6 +240,7 @@ function About() {
                     width={20}
                     height={0}
                     className="mr-2"
+                    id="file"
                   />
                   Ver CV en español
                 </Link>
