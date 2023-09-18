@@ -2,8 +2,6 @@ import Navbar from "@/components/navbar/page";
 import "./globals.css";
 import { Prompt } from "next/font/google";
 import Providers from "./providers";
-import Head from "next/head";
-import Script from "next/script";
 
 const prompt = Prompt({
   weight: ["300", "500", "700"],
@@ -22,15 +20,6 @@ export default function RootLayout({ children }) {
   return (
     <html id="home" lang="en" className="!scroll-smooth" data-theme="dark">
       <head>
-        <Script
-          id="my-script"
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-MKDDY2QNRT"></Script>
-        <Script id="my-script">
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-MKDDY2QNRT');
-        </Script>
         <meta
           name="google-site-verification"
           content="otVZPuFaQ15hHkv10m2h0_P8L2Mj2KjkWfEa0CX4PKM"
