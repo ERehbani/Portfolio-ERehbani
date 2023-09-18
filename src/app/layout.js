@@ -23,9 +23,10 @@ export default function RootLayout({ children }) {
     <html id="home" lang="en" className="!scroll-smooth" data-theme="dark">
       <head>
         <Script
+          id="my-script"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-MKDDY2QNRT"></Script>
-        <Script>
+        <Script id="my-script">
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'G-MKDDY2QNRT');
