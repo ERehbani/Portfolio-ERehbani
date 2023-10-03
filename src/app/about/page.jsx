@@ -217,7 +217,7 @@ function About() {
             <div className="button-download-container">
               <div className="buttons-container">
                 <Link
-                  href="/CV_ES.pdf"
+                  href="/CV_EN.pdf"
                   target="_blank"
                   className="button-download">
                   <Image
@@ -231,7 +231,7 @@ function About() {
                   View CV in english
                 </Link>
                 <Link
-                  href="/CV_EN.pdf"
+                  href="/CV_ES.pdf"
                   target="_blank"
                   className="button-download">
                   <Image

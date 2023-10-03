@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar/page";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Prompt } from "next/font/google";
 import Providers from "./providers";
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
           <div className="background2"></div>
           <Navbar />
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>
