@@ -137,7 +137,7 @@ Prisma ORM and deployed in Vercel
           </div>
           <div className="image-container">
             <Image
-              src="/OG2.png"
+              src="/OG2.webp"
               alt="Ooink.me"
               width={600}
               height={0}
