@@ -16,12 +16,143 @@ function Projects() {
       <div className="">
         <div className="square-show">
           <div className="info-show">
+            <h2 className="title-show flex">Ooink.me </h2>
+            <div className="icons">
+              <div className="div-icons">
+                <Image
+                  src="/nextjs-dark.png"
+                  alt="Next"
+                  width={70}
+                  height={0}
+                  className="svg-icon"
+                />
+                <span className="tooltip3">ReactJS</span>
+              </div>
+              <div className="div-icons">
+                <Image
+                  src="/tailwind-dark.png"
+                  alt="Tailwind"
+                  width={70}
+                  height={0}
+                  className="svg-icon"
+                />
+                <span className="tooltip3 left-28">TailwindCSS</span>
+              </div>
+              <div className="div-icons">
+                <Image
+                  src="/nextui-dark.png"
+                  alt="NextUI"
+                  width={70}
+                  height={0}
+                  className="svg-icon"
+                />
+                <span className="tooltip3 left-[13rem]">NextUI</span>
+              </div>
+              <div className="div-icons">
+                <Image
+                  src="/vercel-dark.png"
+                  alt="Vercel"
+                  width={70}
+                  height={0}
+                  className="svg-icon"
+                />
+                <span className="tooltip3 left-72">Vercel</span>
+              </div>
+              <div className="div-icons">
+                <Image
+                  src="/prisma-dark.png"
+                  alt="Prisma"
+                  width={70}
+                  height={0}
+                  className="svg-icon"
+                />
+                <span className="tooltip3 left-[23rem]">Prisma</span>
+              </div>
+              <div className="div-icons">
+                <Image
+                  src="/git-dark.png"
+                  alt="Git"
+                  width={70}
+                  height={0}
+                  className="svg-icon"
+                />
+                <span className="tooltip3" id="git">
+                  Git
+                </span>
+              </div>
+              <div className="div-icons">
+                <Image
+                  src="/nodejs-dark.png"
+                  alt="NodeJS"
+                  width={70}
+                  height={0}
+                  className="svg-icon"
+                />
+                <span className="tooltip3">NodeJS</span>
+              </div>
+            </div>
+            <p className="description-show">
+              {" "}
+              I developed the Ooink.me web application based on the
+coding of internet links through a random code to facilitate
+their sharing on networks. Made with NextJS, TailwindCSS
+with backend in NodeJS and database in Postgres with the
+Prisma ORM and deployed in Vercel
+            </p>
+
+            <div className="webGithub max-lg:justify-center max-lg:-ml-5 flex">
+              <Link
+                target="_blank"
+                href="http://ooink.me/"
+                id="web-link"
+                className="mr-5">
+                <div className="button-visit">
+                  <Image
+                    src="/web-light.svg"
+                    alt="Web"
+                    width={36}
+                    height={0}
+                    className="links-projects w-9 justify-center mr-2 max-sm:mr-1 max-sm:-mt-1"
+                  />
+                  <p className="mt-1">Visit</p>
+                </div>
+              </Link>
+
+              <Link
+                href="https://github.com/ERehbani/ooink.me"
+                target="_blank"
+                id="github-link">
+                <div className="button-visit">
+                  <Image
+                    src="/Github.svg"
+                    alt="Github"
+                    width={36}
+                    height={0}
+                    className="links-projects w-9 justify-center mr-2"
+                  />
+                  <p className="mt-1">View code</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="image-container">
+            <Image
+              src="/OG2.png"
+              alt="Ooink.me"
+              width={600}
+              height={0}
+              className="image-show"
+            />
+          </div>
+        </div>
+
+        <div className="square-show">
+          <div className="info-show">
             <h2 className="title-show flex">
               Talent Forge, a course platform{" "}
             </h2>
             <div className="icons">
               <div className="div-icons">
-                {/* <img className="svg-icon" src="React.svg" alt="React" /> */}
                 <Image
                   src="/reactjs-dark.png"
                   alt="React"
@@ -32,7 +163,6 @@ function Projects() {
                 <span className="tooltip1">ReactJS</span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="tailwind.svg" alt="Tailwind" /> */}
                 <Image
                   src="/tailwind-dark.png"
                   alt="Tailwind"
@@ -43,7 +173,6 @@ function Projects() {
                 <span className="tooltip1 left-28">TailwindCSS</span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="firebase.svg" alt="Firebase" /> */}
                 <Image
                   src="/firebase-dark.png"
                   alt="Firebase"
@@ -56,11 +185,6 @@ function Projects() {
                 </span>
               </div>
               <div className="div-icons">
-                {/* <img
-              className="svg-icon"
-              src="mercadopago.svg"
-              alt="Mercado Pago"
-            /> */}
                 <Image
                   src="/mercado-pago-dark.png"
                   alt="Mercado Pago"
@@ -73,7 +197,6 @@ function Projects() {
                 </span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="mongodb.svg" alt="Mongo DB" /> */}
                 <Image
                   src="/mongodb-dark.png"
                   alt="Mongo DB"
@@ -86,7 +209,6 @@ function Projects() {
                 </span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="Git.svg" alt="Git" /> */}
                 <Image
                   src="/git-dark.png"
                   alt="Git"
@@ -99,7 +221,6 @@ function Projects() {
                 </span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="Nodejs.svg" alt="NodeJS" /> */}
                 <Image
                   src="/nodejs-dark.png"
                   alt="NodeJS"
@@ -123,8 +244,6 @@ function Projects() {
             </p>
 
             <div className="webGithub max-lg:justify-center max-lg:-ml-5 flex">
-              {/* <Link target='_blank' href="https://deploy-front-end-git-main-shakkus.vercel.app/home" id="web-link"><Image src="/web.svg" alt='Web' width={40} height={0} className='links-projects w-10 justify-center mr-5' />Visit</Link> */}
-
               <Link
                 target="_blank"
                 href="https://deploy-front-end-git-main-shakkus.vercel.app/home"
@@ -160,11 +279,6 @@ function Projects() {
             </div>
           </div>
           <div className="image-container">
-            {/* <img
-            className="image-show"
-            src="Talent_forge.png"
-            alt="Talent Forge"
-          /> */}
             <Image
               src="/Talent_forge.png"
               alt="Talent Forge"
@@ -179,7 +293,6 @@ function Projects() {
             <h2 className="title-show flex">Web with API Countries </h2>
             <div className="icons">
               <div className="div-icons">
-                {/* <img className="svg-icon" src="React.svg" alt="React" /> */}
                 <Image
                   src="/reactjs-dark.png"
                   alt="React"
@@ -190,7 +303,6 @@ function Projects() {
                 <span className="tooltip2">React</span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="Redux.svg" alt="Redux" /> */}
                 <Image
                   src="/redux-dark.png"
                   alt="Redux"
@@ -201,7 +313,6 @@ function Projects() {
                 <span className="tooltip2">Redux</span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="PostgreSQL.svg" alt="PostgreSQL" /> */}
                 <Image
                   src="/postgresql-dark.png"
                   alt="PostgreSQL"
@@ -212,7 +323,6 @@ function Projects() {
                 <span className="tooltip2">SQL</span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="Nodejs.svg" alt="NodeJS" /> */}
                 <Image
                   src="/nodejs-dark.png"
                   alt="NodeJS"
@@ -223,7 +333,6 @@ function Projects() {
                 <span className="tooltip2">NodeJS</span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="Nodemon.svg" alt="Nodemon" /> */}
                 <Image
                   src="/nodemon-dark.png"
                   alt="Nodemon"
@@ -234,7 +343,6 @@ function Projects() {
                 <span className="tooltip2">Nodemon</span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="CSS.svg" alt="CSS" /> */}
                 <Image
                   src="/css-dark.png"
                   alt="CSS"
@@ -245,7 +353,6 @@ function Projects() {
                 <span className="tooltip2">CSS</span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="axios.svg" alt="Axios" /> */}
                 <Image
                   src="/axios-dark.png"
                   alt="Axios"
@@ -256,7 +363,6 @@ function Projects() {
                 <span className="tooltip2">Axios</span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="express-color.svg" alt="ExpressJS" /> */}
                 <Image
                   src="/expressjs-dark.png"
                   alt="Express"
@@ -269,7 +375,6 @@ function Projects() {
                 </span>
               </div>
               <div className="div-icons">
-                {/* <img className="svg-icon" src="Git.svg" alt="Git"/> */}
                 <Image
                   src="/git-dark.png"
                   alt="Git"
@@ -307,11 +412,6 @@ function Projects() {
               </Link>
             </div>
           </div>
-          {/* <img
-            className="image-show"
-            src="web_api_countries.png"
-            alt="Countries API"
-          /> */}
           <div className="image-container">
             <Image
               src="/web_api_countries.png"
@@ -329,7 +429,6 @@ function Projects() {
             </h2>
             <div className="icons">
               <div className="div-icons">
-                {/* <img className="svg-icon w-20" src="React-Native.png" alt="React Native" /> */}
                 <Image
                   src="/react-native-dark.png"
                   alt="React Native"
@@ -363,11 +462,6 @@ function Projects() {
             </div>
           </div>
           <div className="phone-container">
-            {/* <img
-            className="phone-show"
-            src="Planificator1.webp"
-            alt="Weather App"
-          /> */}
             <Image
               src="/Planificator1.webp"
               alt="Planificator"
@@ -375,11 +469,7 @@ function Projects() {
               width={163}
               height={0}
             />
-            {/* <img
-            className="phone-show"
-            src="Planificator3.webp"
-            alt="Weather App"
-          /> */}
+
             <Image
               src="/Planificator3.webp"
               alt="Planificator"
@@ -387,11 +477,7 @@ function Projects() {
               height={0}
               className="phone-show"
             />
-            {/* <img
-            className="phone-show"
-            src="Planificator4.webp"
-            alt="Weather App"
-          /> */}
+
             <Image
               src="/Planificator4.webp"
               alt="Planificator"
@@ -443,11 +529,6 @@ function Projects() {
             </div>
           </div>
           <div className="phone-container">
-            {/* <img
-            className="phone-show"
-            src="quotes2.webp"
-            alt="Quotes App"
-          /> */}
             <Image
               src="/quotes2.webp"
               alt="Quotes App"
@@ -455,11 +536,7 @@ function Projects() {
               width={163}
               height={0}
             />
-            {/* <img
-            className="phone-show"
-            src="quotes3.webp"
-            alt="Quotes App"
-          /> */}
+
             <Image
               src="/quotes3.webp"
               alt="Quotes App"
@@ -467,11 +544,7 @@ function Projects() {
               width={163}
               height={0}
             />
-            {/* <img
-            className="phone-show"
-            src="quotes4.webp"
-            alt="Quotes App"
-          /> */}
+
             <Image
               src="/quotes4.webp"
               alt="Quotes App"
@@ -496,7 +569,6 @@ function Projects() {
                 <span className="tooltip1 -mt-16 left-10">React Native</span>
               </div>
               <div className="div-icons mt-3 max-lg:mt-3 max-lg:-ml-3">
-                {/* <img className="svg-icon w-24" src="OpenWeather.svg" alt="Open weather" /> */}
                 <Image
                   src="/open-weather-dark.png"
                   alt="Open Weather"
@@ -532,11 +604,6 @@ function Projects() {
             </div>
           </div>
           <div className="phone-container">
-            {/* <img
-            className="phone-show"
-            src="weatherApp1.webp"
-            alt="Weather App"
-          /> */}
             <Image
               src="/weatherApp1.webp"
               alt="Weather App"
@@ -544,11 +611,7 @@ function Projects() {
               width={163}
               height={0}
             />
-            {/* <img
-            className="phone-show"
-            src="weatherApp2.webp"
-            alt="Weather App"
-          /> */}
+
             <Image
               src="/weatherApp2.webp"
               alt="Weather App"
@@ -556,11 +619,7 @@ function Projects() {
               width={163}
               height={0}
             />
-            {/* <img
-            className="phone-show"
-            src="weatherApp3.webp"
-            alt="Weather App"
-          /> */}
+
             <Image
               src="/weatherApp3.webp"
               alt="Weather App"
