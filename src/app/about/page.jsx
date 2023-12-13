@@ -251,7 +251,7 @@ function About() {
       </div>
 
       <h1 className="text-7xl text-center font-medium mx-auto secondary-title max-lg:mt-4">
-        Languages
+        Technologies
       </h1>
       <div className="grid-container">
         <div className="item-languages">
@@ -317,7 +317,7 @@ function About() {
       </div>
 
       <h1 className="max-lg:mt-9 text-7xl text-center font-medium mx-auto main-title3">
-        Softwares
+        Software
       </h1>
       <div className="grid-container2">
         <div className="item-languages" id="figma">

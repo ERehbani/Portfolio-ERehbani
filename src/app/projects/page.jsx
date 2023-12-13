@@ -16,7 +16,7 @@ function Projects() {
       <div className="">
         <div className="square-show">
           <div className="info-show">
-            <h2 className="title-show flex">Ooink.me </h2>
+            <h2 className="title-show flex">Ooink.me</h2>
             <div className="icons">
               <div className="div-icons">
                 <Image
@@ -93,11 +93,11 @@ function Projects() {
             </div>
             <p className="description-show">
               {" "}
-              I developed the Ooink.me web application based on the
-coding of internet links through a random code to facilitate
-their sharing on networks. Made with NextJS, TailwindCSS
-with backend in NodeJS and database in Postgres with the
-Prisma ORM and deployed in Vercel
+              I developed the Ooink.me web application based on the coding of
+              internet links through a random code to facilitate their sharing
+              on networks. Made with NextJS, TailwindCSS with backend in NodeJS
+              and database in Postgres with the Prisma ORM and deployed in
+              Vercel
             </p>
 
             <div className="webGithub max-lg:justify-center max-lg:-ml-5 flex">
@@ -114,7 +114,7 @@ Prisma ORM and deployed in Vercel
                     height={0}
                     className="links-projects w-9 justify-center mr-2 max-sm:mr-1 max-sm:-mt-1"
                   />
-                  <p className="mt-1">Visit</p>
+                  <p className="mt-1 text-link">Visit</p>
                 </div>
               </Link>
 
@@ -130,7 +130,7 @@ Prisma ORM and deployed in Vercel
                     height={0}
                     className="links-projects w-9 justify-center mr-2"
                   />
-                  <p className="mt-1">View code</p>
+                  <p className="text-link flex flex-col justify-center">View code</p>
                 </div>
               </Link>
             </div>
@@ -273,7 +273,7 @@ Prisma ORM and deployed in Vercel
                     height={0}
                     className="links-projects w-9 justify-center mr-2"
                   />
-                  <p className="mt-1">View code</p>
+                  <p className="mt-1 text-link">View code</p>
                 </div>
               </Link>
             </div>
@@ -407,7 +407,7 @@ Prisma ORM and deployed in Vercel
                     height={0}
                     className="links-projects w-9 justify-center mr-2"
                   />
-                  <p className="mt-1">View code</p>
+                  <p className="mt-1 text-link">View code</p>
                 </div>
               </Link>
             </div>
@@ -456,7 +456,7 @@ Prisma ORM and deployed in Vercel
                     height={0}
                     className="links-projects w-9 justify-center mr-2"
                   />
-                  <p className="mt-1">View code</p>
+                  <p className="mt-1 text-link">View code</p>
                 </div>
               </Link>
             </div>
@@ -523,7 +523,7 @@ Prisma ORM and deployed in Vercel
                     height={0}
                     className="links-projects w-9 justify-center mr-2"
                   />
-                  <p className="mt-1">View code</p>
+                  <p className="mt-1 text-link">View code</p>
                 </div>
               </Link>
             </div>
@@ -598,7 +598,7 @@ Prisma ORM and deployed in Vercel
                     height={0}
                     className="links-projects w-9 justify-center mr-2"
                   />
-                  <p className="mt-1">View code</p>
+                  <p className="mt-1 text-link">View code</p>
                 </div>
               </Link>
             </div>

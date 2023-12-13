@@ -330,9 +330,16 @@
   }
 }
 
+.text-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .links-projects {
   fill: white !important;
   /* margin-top: 50px; */
+  /* border: 1px solid red; */
 
   @media (max-width: 1440px) {
     width: 30px;
@@ -557,12 +564,12 @@
   padding: 16px 24px;
   border-radius: 25px;
   font-size: 16px;
-
+  
   @media (max-width: 1024px) {
     font-size: 16px;
     padding: 14px 22px;
   }
-
+  
   @media (max-width: 640px) {
     font-size: 12px;
     padding: 8px 12px;
@@ -575,6 +582,7 @@
   background-color: #fae8ff;
   color: #0b0014;
   border: 1px solid rgba(236, 234, 234, 0.411);
+  /* border: 1px solid red; */
 }
 
 [data-theme="light"] .button-visit {
