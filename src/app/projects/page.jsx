@@ -3,6 +3,7 @@ import React from "react";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { projects } from "./projects";
 function Projects() {
   return (
     <div>
@@ -14,6 +15,64 @@ function Projects() {
         </h2>
       </div>
       <div className="">
+        {projects.map((item, index) => (
+          <div className="square-show" key={index}>
+            <div className="info-show">
+              <h2 className="title-show flex">{item.title}</h2>
+              <div className="icons">
+                {item.icons.map((item, index) => (
+                  <div key={index} className="div-icons mr-4">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      width={50}
+                      height={0}
+                      classname={item.classname}
+                    />
+                    <span className={item.span.classname}>
+                      {item.span.span}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <p className="description-show border border-red-600">
+                {item.description.description}
+              </p>
+              <div className={item.divLink}>
+                {item.links.map((item, index) => (
+                  <div key={index}>
+                    <Link href={item.href} id={item.id}>
+                      <div className="button-visit mr-5">
+                        <Image
+                          src={item?.button?.image?.src}
+                          alt={item?.button?.image?.alt}
+                          width={item?.button?.image?.width}
+                          height={0}
+                          className={item?.button?.image?.classname}
+                        />
+                        <p className={item.text.classname}>{item.text.text}</p>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+              <div className="image-container">
+                {item.images.map((item, index) => (
+                  <div key={index}>
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      width={item.width}
+                      height={0}
+                      className={item.classname}
+                    />
+                  </div>
+                ))}
+              </div>
+          </div>
+        ))}
+
         <div className="square-show">
           <div className="info-show">
             <h2 className="title-show flex">Ooink.me</h2>
@@ -130,14 +189,16 @@ function Projects() {
                     height={0}
                     className="links-projects w-9 justify-center mr-2"
                   />
-                  <p className="text-link flex flex-col justify-center">View code</p>
+                  <p className="text-link flex flex-col justify-center">
+                    View code
+                  </p>
                 </div>
               </Link>
             </div>
           </div>
           <div className="image-container">
             <Image
-              src="/OG2.webp"
+              src="/Projects/Web Projects/OG2.webp"
               alt="Ooink.me"
               width={600}
               height={0}
@@ -160,7 +221,7 @@ function Projects() {
                   height={0}
                   className="svg-icon"
                 />
-                <span className="tooltip1">ReactJS</span>
+                <span className="tooltip1">React</span>
               </div>
               <div className="div-icons">
                 <Image
@@ -280,7 +341,7 @@ function Projects() {
           </div>
           <div className="image-container">
             <Image
-              src="/Talent_forge.png"
+              src="/Projects/Web Projects/Talent_forge.png"
               alt="Talent Forge"
               width={600}
               height={0}
@@ -290,7 +351,7 @@ function Projects() {
         </div>
         <div className="square-show">
           <div className="info-show">
-            <h2 className="title-show flex">Web with API Countries </h2>
+            <h2 className="title-show flex">Web with API Countries</h2>
             <div className="icons">
               <div className="div-icons">
                 <Image
@@ -414,7 +475,7 @@ function Projects() {
           </div>
           <div className="image-container">
             <Image
-              src="/web_api_countries.png"
+              src="/Projects/Web Projects/web_api_countries.png"
               alt="Countries API"
               width={600}
               height={0}
@@ -436,7 +497,9 @@ function Projects() {
                   height={0}
                   className="svg-icon"
                 />
-                <span className="tooltip1 left-9">React Native</span>
+                <span className="tooltip1 left-9" id="expense_rn">
+                  React Native
+                </span>
               </div>
             </div>
             <p className="description-show">
@@ -463,7 +526,7 @@ function Projects() {
           </div>
           <div className="phone-container">
             <Image
-              src="/Planificator1.webp"
+              src="/Projects/Planificator/Planificator1.webp"
               alt="Planificator"
               className="phone-show"
               width={163}
@@ -471,7 +534,7 @@ function Projects() {
             />
 
             <Image
-              src="/Planificator3.webp"
+              src="/Projects/Planificator/Planificator3.webp"
               alt="Planificator"
               width={163}
               height={0}
@@ -479,7 +542,7 @@ function Projects() {
             />
 
             <Image
-              src="/Planificator4.webp"
+              src="/Projects/Planificator/Planificator4.webp"
               alt="Planificator"
               width={163}
               height={0}
@@ -502,7 +565,9 @@ function Projects() {
                   height={0}
                   className="svg-icon"
                 />
-                <span className="tooltip1 left-9">React Native</span>
+                <span className="tooltip4 left-9" id="weather_rn">
+                  React Native
+                </span>
               </div>
             </div>
             <p className="description-show mt-5">
@@ -530,7 +595,7 @@ function Projects() {
           </div>
           <div className="phone-container">
             <Image
-              src="/quotes2.webp"
+              src="/Projects/Quote/quotes2.webp"
               alt="Quotes App"
               className="phone-show"
               width={163}
@@ -538,7 +603,7 @@ function Projects() {
             />
 
             <Image
-              src="/quotes3.webp"
+              src="/Projects/Quote/quotes3.webp"
               alt="Quotes App"
               className="phone-show"
               width={163}
@@ -546,7 +611,7 @@ function Projects() {
             />
 
             <Image
-              src="/quotes4.webp"
+              src="/Projects/Quote/quotes4.webp"
               alt="Quotes App"
               className="phone-show"
               width={163}
@@ -566,7 +631,7 @@ function Projects() {
                   height={0}
                   className="svg-icon"
                 />
-                <span className="tooltip1 -mt-16 left-10">React Native</span>
+                <span className="tooltip4 -mt-16 left-10">React Native</span>
               </div>
               <div className="div-icons mt-3 max-lg:mt-3 max-lg:-ml-3">
                 <Image
@@ -576,7 +641,7 @@ function Projects() {
                   height={0}
                   className="svg-icon"
                 />
-                <span className="tooltip1 -mt-16 left-28">
+                <span className="tooltip4 -mt-16 left-28">
                   Open Weather API
                 </span>
               </div>
@@ -605,7 +670,7 @@ function Projects() {
           </div>
           <div className="phone-container">
             <Image
-              src="/weatherApp1.webp"
+              src="/Projects/Weather/weatherApp1.webp"
               alt="Weather App"
               className="phone-show"
               width={163}
@@ -613,7 +678,7 @@ function Projects() {
             />
 
             <Image
-              src="/weatherApp2.webp"
+              src="/Projects/Weather/weatherApp2.webp"
               alt="Weather App"
               className="phone-show"
               width={163}
@@ -621,7 +686,7 @@ function Projects() {
             />
 
             <Image
-              src="/weatherApp3.webp"
+              src="/Projects/Weather/weatherApp3.webp"
               alt="Weather App"
               className="phone-show"
               width={163}

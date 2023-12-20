@@ -97,7 +97,7 @@
   color: #fae8ff;
   font-size: 40px;
   font-weight: 500;
-  width: 80%;
+  width: 100%;
 
   @media (max-width: 1440px) {
     font-size: 35px;
@@ -400,14 +400,18 @@
 
 @media (max-width: 1440px) {
   .tooltip1,
-  .tooltip2, .tooltip3 {
+  .tooltip2,
+  .tooltip3,
+  .tooltip4 {
     display: none;
   }
 }
 
 @media (min-width: 1440px) {
   .tooltip1,
-  .tooltip2, .tooltip3 {
+  .tooltip2,
+  .tooltip3,
+  .tooltip4 {
     position: absolute;
     top: 0;
     margin-left: 12px;
@@ -426,7 +430,8 @@
 
   .tooltip1::before,
   .tooltip2::before,
-  .tooltip3::before {
+  .tooltip3::before,
+  .tooltip4::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -463,8 +468,10 @@
     margin-top: 75px;
   }
 
+  
+
   .div-icons:hover .tooltip1 {
-    top: 180px;
+    top: 125px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -482,6 +489,21 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+  }
+
+  .div-icons:hover .tooltip4 {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    top: 198px;
+  }
+
+  .div-icons:hover #expense_rn {
+    top: 125px;
+  }
+
+  .div-icons:hover #weather_rn {
+    top: 185px;
   }
 }
 
@@ -564,12 +586,12 @@
   padding: 16px 24px;
   border-radius: 25px;
   font-size: 16px;
-  
+
   @media (max-width: 1024px) {
     font-size: 16px;
     padding: 14px 22px;
   }
-  
+
   @media (max-width: 640px) {
     font-size: 12px;
     padding: 8px 12px;
@@ -582,7 +604,6 @@
   background-color: #fae8ff;
   color: #0b0014;
   border: 1px solid rgba(236, 234, 234, 0.411);
-  /* border: 1px solid red; */
 }
 
 [data-theme="light"] .button-visit {
