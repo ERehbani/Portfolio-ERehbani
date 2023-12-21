@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "./projects";
+import { projectNative, projects } from "./projects";
+import "./globals.css";
 function Projects() {
   return (
     <div>
@@ -17,31 +17,31 @@ function Projects() {
       <div className="">
         {projects.map((item, index) => (
           <div className="square-show" key={index}>
-            <div className="info-show">
-              <h2 className="title-show flex">{item.title}</h2>
+            <div className="info-show pl-5">
+              <h2 className="title-show flex -ml-5">{item.title}</h2>
               <div className="icons">
-                {item.icons.map((item, index) => (
-                  <div key={index} className="div-icons mr-4">
+                {item.icons?.map((item, index) => (
+                  <div key={index} className="div-icons mt-4">
                     <Image
                       src={item.src}
                       alt={item.alt}
                       width={50}
                       height={0}
-                      classname={item.classname}
+                      className="svg-icon"
                     />
-                    <span className={item.span.classname}>
+                    <span
+                      className={item.span.classname}
+                      id={item.span.id && item.span.id}>
                       {item.span.span}
                     </span>
                   </div>
                 ))}
               </div>
-              <p className="description-show border border-red-600">
-                {item.description.description}
-              </p>
-              <div className={item.divLink}>
-                {item.links.map((item, index) => (
+              <p className="description-show -ml-5 ">{item.description}</p>
+              <div className={`${item.divLink} -ml-5`}>
+                {item.links?.map((item, index) => (
                   <div key={index}>
-                    <Link href={item.href} id={item.id}>
+                    <Link href={item.href} id={item.id} target="_blank">
                       <div className="button-visit mr-5">
                         <Image
                           src={item?.button?.image?.src}
@@ -57,23 +57,23 @@ function Projects() {
                 ))}
               </div>
             </div>
-              <div className="image-container">
-                {item.images.map((item, index) => (
-                  <div key={index}>
-                    <Image
-                      src={item.src}
-                      alt={item.alt}
-                      width={item.width}
-                      height={0}
-                      className={item.classname}
-                    />
-                  </div>
-                ))}
-              </div>
+            <div className="image-container">
+              {item.images?.map((item, index) => (
+                <div key={index}>
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    width={item.width}
+                    height={0}
+                    className={item.classname}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         ))}
 
-        <div className="square-show">
+        {/* <div className="square-show">
           <div className="info-show">
             <h2 className="title-show flex">Ooink.me</h2>
             <div className="icons">
@@ -205,9 +205,9 @@ function Projects() {
               className="image-show"
             />
           </div>
-        </div>
+        </div> */}
 
-        <div className="square-show">
+        {/* <div className="square-show">
           <div className="info-show">
             <h2 className="title-show flex">
               Talent Forge, a course platform{" "}
@@ -348,8 +348,8 @@ function Projects() {
               className="image-show"
             />
           </div>
-        </div>
-        <div className="square-show">
+        </div> */}
+        {/* <div className="square-show">
           <div className="info-show">
             <h2 className="title-show flex">Web with API Countries</h2>
             <div className="icons">
@@ -482,8 +482,63 @@ function Projects() {
               className="image-show"
             />
           </div>
-        </div>
-        <div className="square-show-phone">
+        </div> */}
+        {projectNative.map((item, index) => (
+          <div key={index} className="square-show-phone">
+            <div className="info-show">
+              <h2 className="title-show flex">{item.title}</h2>
+              <div className="icons">
+                {item.icons.map((item, index) => (
+                  <div key={index} className="div-icons">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      width={36}
+                      height={0}
+                      className={item.classname}
+                    />
+                    <span
+                      className={item.span.classname}
+                      id={item.span.id && item.span.id}>
+                      {item.span.span}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <p className="description-show">{item.description}</p>
+              <div className={item.divLink}>
+                <Link id={item.links.id} target="_blank" href={item.links.href}>
+                  <div className="button-visit">
+                    <Image
+                      src={item.links.button.image.src}
+                      alt={item.links.button.image.alt}
+                      width={36}
+                      height={0}
+                      className={item.links.button.image.classname}
+                    />
+                    <p className={item.links.text.classname}>
+                      {item.links.text.text}
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div key={index} className="phone-container">
+            {item.images.map((item, index) => (
+                <Image
+                key={index}
+                  src={item.src}
+                  alt={item.alt}
+                  width={item.width}
+                  height={0}
+                  className="phone-show"
+                />
+                ))}
+                </div>
+          </div>
+        ))}
+
+        {/* <div className="square-show-phone">
           <div className="info-show">
             <h2 className="title-show flex">
               Expense Planner in React Native{" "}
@@ -549,9 +604,9 @@ function Projects() {
               className="phone-show"
             />
           </div>
-        </div>
+        </div> */}
 
-        <div className="square-show-phone">
+        {/* <div className="square-show-phone">
           <div className="info-show">
             <h2 className="title-show">
               Administrator of appointments in React Native
@@ -618,8 +673,8 @@ function Projects() {
               height={0}
             />
           </div>
-        </div>
-        <div className="square-show-phone">
+        </div> */}
+        {/* <div className="square-show-phone">
           <div className="info-show">
             <h2 className="title-show">Weather App in React Native</h2>
             <div className="icons">
@@ -693,7 +748,7 @@ function Projects() {
               height={0}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
