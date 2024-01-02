@@ -16,8 +16,8 @@ function Navbar() {
       <div className="navbar-border mx-auto">
         <div className="navbar">
           <div className="navlist flex justify-around py-5">
-            <button className="bookmarkBtn">
-              <Link href="#home">
+            <Link href="#home">
+              <button className="bookmarkBtn">
                 <span className="text">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -33,12 +33,12 @@ function Navbar() {
                     />
                   </svg>
                 </span>
-              </Link>
-              <p className="IconContainer">Home</p>
-            </button>
+                <p className="IconContainer">Home</p>
+              </button>
+            </Link>
 
-            <button className="bookmarkBtn">
-              <Link href="#projects">
+            <Link href="#projects">
+              <button className="bookmarkBtn">
                 <span className="text">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,12 +55,12 @@ function Navbar() {
                     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
                   </svg>
                 </span>
-              </Link>
-              <p className="ml-1 IconContainer">Projects</p>
-            </button>
+                <p className="ml-1 IconContainer">Projects</p>
+              </button>
+            </Link>
 
-            <button className="bookmarkBtn">
-              <Link href="#about">
+            <Link href="#about">
+              <button className="bookmarkBtn">
                 <span className="text">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -78,11 +78,11 @@ function Navbar() {
                     <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
                   </svg>
                 </span>
-              </Link>
-              <p className="IconContainer">About</p>
-            </button>
-            <button className="bookmarkBtn">
-              <Link href="#contact">
+                <p className="IconContainer">About</p>
+              </button>
+            </Link>
+            <Link href="#contact">
+              <button className="bookmarkBtn">
                 <span className="text">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -99,9 +99,9 @@ function Navbar() {
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg>
                 </span>
-              </Link>
-              <p className="IconContainer">Contact</p>
-            </button>
+                <p className="IconContainer">Contact</p>
+              </button>
+            </Link>
           </div>
         </div>
 
