@@ -9,8 +9,7 @@ function Projects() {
     <div>
       <div className="">
         <h2
-          className="secondary-title h-28 flex text-7xl text-center font-medium mt-20 justify-center"
-          id="projects">
+          className="secondary-title h-28 flex text-7xl text-center font-medium mt-20 justify-center">
           My Projects
         </h2>
       </div>

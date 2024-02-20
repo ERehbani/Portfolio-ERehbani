@@ -1,16 +1,15 @@
 import React from "react";
 import About from "./about/page";
-import './globals.css'
+import "./globals.css";
 import Projects from "./projects/page";
 import Footer from "@/components/footer/page";
 import Contact from "./contact/page";
-
+import JobExperience from "./jobExperience/page";
 
 export default function Home() {
   return (
     <div className="h-36">
       <div className="mt-52 mx-auto">
-
         <h1 className="main-title text-8xl text-center font-medium mx-auto">
           Hi. I’m Elián <br />A Full Stack Dev.
         </h1>
@@ -20,26 +19,30 @@ export default function Home() {
         </p>
       </div>
 
-
-        <div className="mb-32" id="projects"></div>
-        <div>
-          <Projects/>
-        </div>
+      <div>
+        <JobExperience />
+      </div>
 
       <div className="mb-40" id="about"></div>
-        <div>
-        <About/>
+      <div>
+        <About />
       </div>
+
+      <div  id="projects"></div>
+      <div>
+        <Projects />
+      </div>
+
+     
 
       <div className="mb-40" id="contact">
         <div>
-          <Contact/>
+          <Contact />
         </div>
       </div>
       <div>
-        <Footer/>
+        <Footer />
       </div>
-
     </div>
   );
 }

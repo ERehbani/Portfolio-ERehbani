@@ -254,20 +254,43 @@ function About() {
       <h1 className="text-7xl text-center font-medium mx-auto secondary-title max-lg:mt-4">
         Technologies
       </h1>
-      <div className="grid-container">
-        {technologies.map((tech, index) => (
-          <div className="item-languages" key={index}>
-            <Image
-              src={tech.image}
-              alt={tech.alt}
-              width={tech.width}
-              height={tech.height}
-            />
-            <p>{tech.imageName}</p>
+      <div className="flex w-[80%] mx-auto justify-around my-5">
+        <div>
+          <h2 className="text2">Frontend</h2>
+          <div className="grid-container">
+            {technologies.frontend.map((tech, index) => (
+              <div className="item-languages" key={index}>
+                <Image
+                  src={tech.image}
+                  alt={tech.alt}
+                  width={tech.width}
+                  height={tech.height}
+                />
+                <p>{tech.imageName}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
 
+              <hr className="text-white w-[40%] rotate-90 m-[-50px] mt-96"/>
+
+        <div>
+          <h2 className="text2">Backend</h2>
+          <div className="grid-container">
+            {technologies.backend.map((tech, index) => (
+              <div className="item-languages" key={index}>
+                <Image
+                  src={tech.image}
+                  alt={tech.alt}
+                  width={tech.width}
+                  height={tech.height}
+                />
+                <p>{tech.imageName}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
       <h1 className="max-lg:mt-9 text-7xl text-center font-medium mx-auto main-title3">
         Software
       </h1>

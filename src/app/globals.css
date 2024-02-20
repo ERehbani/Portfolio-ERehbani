@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar-thumb {
+  background-color: #0b0014;
+}
+
 [data-theme="dark"] body {
-  background-color: #0B0014
+  background-color: #0b0014;
 }
 
 body {
-  background-color: #FAE8FF;
+  background-color: #fae8ff;
 }
 
 .background {
@@ -16,7 +20,7 @@ body {
   flex-shrink: 0;
   border-radius: 895px;
   opacity: 0.15;
-  background: #A855F7;
+  background: #a855f7;
   filter: blur(1000px);
   position: fixed;
   top: -550px;
@@ -41,7 +45,7 @@ body {
   flex-shrink: 0;
   border-radius: 895px;
   opacity: 0.1;
-  background: #A855F7;
+  background: #a855f7;
   filter: blur(1000px);
   position: fixed;
   top: -550px;
@@ -65,7 +69,7 @@ body {
 }
 
 .background2 {
-  background: #A855F7;
+  background: #a855f7;
   width: 895px;
   height: 895px;
   flex-shrink: 0;
@@ -93,7 +97,7 @@ body {
   flex-shrink: 0;
   border-radius: 895px;
   opacity: 0.1;
-  background: #A855F7;
+  background: #a855f7;
   filter: blur(1000px);
   position: fixed;
   bottom: -550px;
@@ -112,7 +116,7 @@ body {
 
 [data-theme="light"] .main-title,
 .main-title2 {
-  background: #0B0014;
+  background: #0b0014;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-duration: 1.3s;
@@ -121,20 +125,19 @@ body {
 [data-theme="dark"] .main-title,
 .main-title2,
 .main-title3 {
-  background: linear-gradient(to right, #a383ac 0%, #FAE8FF 49%, #a383ac 65%);
+  background: linear-gradient(to right, #a383ac 0%, #fae8ff 49%, #a383ac 65%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-duration: 1.3s;
 }
 
 [data-theme="light"] .main-title3 {
-  background: #0B0014;
+  background: #0b0014;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 1024px) {
-
   .main-title2 {
     margin-top: 120px;
     height: 103px;
@@ -146,20 +149,20 @@ body {
   }
 
   [data-theme="dark"] .main-p {
-    color: #FAE8FF;
+    color: #fae8ff;
   }
 
   [data-theme="light"] .main-p {
-    color: #0B0014;
+    color: #0b0014;
   }
 
   .grid-container {
     width: 17vw;
-    margin: auto;
+    margin: 0 150px;
     justify-content: center;
     gap: 17px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 50px;
   }
 
@@ -181,9 +184,14 @@ body {
     backdrop-filter: blur(32px);
     /* border: 1px solid rgba(236, 234, 234, 0.411); */
     border: 1px solid transparent;
-    border-image-source: linear-gradient(90deg, #ffffff81 0%, #ffffff00 50%, #ffffff81 90%);
+    border-image-source: linear-gradient(
+      90deg,
+      #ffffff81 0%,
+      #ffffff00 50%,
+      #ffffff81 90%
+    );
     border-image-slice: 1;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   [data-theme="light"] .item-languages {
@@ -194,9 +202,14 @@ body {
     backdrop-filter: blur(32px);
     /* border: 1px solid rgba(236, 234, 234, 0.411); */
     border: 1px solid transparent;
-    border-image-source: linear-gradient(90deg, #9747FF 0%, #FFFFFF 50%, #9747FF 90%);
+    border-image-source: linear-gradient(
+      90deg,
+      #9747ff 0%,
+      #ffffff 50%,
+      #9747ff 90%
+    );
     border-image-slice: 1;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   .item-languages img {
@@ -209,39 +222,36 @@ body {
     filter: drop-shadow(10px 5px 4px #49494977);
   }
 
-
-
   [data-theme="dark"] .item-languages p {
     display: flex;
     text-align: center;
     justify-content: center;
-    color: #FAE8FF;
+    color: #fae8ff;
   }
 
   [data-theme="light"] .item-languages p {
     display: flex;
     text-align: center;
     justify-content: center;
-    color: #0B0014;
+    color: #0b0014;
   }
 
   [data-theme="dark"] #express img {
-    content: url('../../public/express-color.svg');
-
+    content: url("../../public/express-color.svg");
   }
 
   [data-theme="light"] #expressjs img {
-    content: url('../../public/express-light.svg');
+    content: url("../../public/express-light.svg");
     width: 70px;
     margin-top: 50px;
   }
 
   [data-theme="dark"] #next img {
-    content: url('../../public/TechImage/Next.png');
+    content: url("../../public/TechImage/Next.png");
   }
 
   [data-theme="light"] #next img {
-    content: url('../../public/nextjs-light.svg');
+    content: url("../../public/nextjs-light.svg");
     width: 70px;
   }
 
@@ -251,7 +261,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-
   .main-title,
   .main-title2,
   .main-title3 {
@@ -283,9 +292,14 @@ body {
     backdrop-filter: blur(32px);
     /* border: 1px solid rgba(236, 234, 234, 0.411); */
     border: 1px solid transparent;
-    border-image-source: linear-gradient(90deg, #ffffff81 0%, #ffffff00 50%, #ffffff81 90%);
+    border-image-source: linear-gradient(
+      90deg,
+      #ffffff81 0%,
+      #ffffff00 50%,
+      #ffffff81 90%
+    );
     border-image-slice: 1;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   [data-theme="light"] .item-languages {
@@ -295,9 +309,14 @@ body {
     backdrop-filter: blur(32px);
     /* border: 1px solid rgba(236, 234, 234, 0.411); */
     border: 1px solid transparent;
-    border-image-source: linear-gradient(90deg, #9747FF 0%, #FFFFFF 50%, #9747FF 90%);
+    border-image-source: linear-gradient(
+      90deg,
+      #9747ff 0%,
+      #ffffff 50%,
+      #9747ff 90%
+    );
     border-image-slice: 1;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   [data-theme="dark"] .item-languages p {
@@ -342,24 +361,23 @@ body {
   }
 
   [data-theme="light"] #expressjs img {
-    content: url('../../public/express-light.svg');
+    content: url("../../public/express-light.svg");
     width: 45px;
     margin-top: 35px;
   }
 
   [data-theme="dark"] #next img {
-    content: url('../../public/TechImage/Next.png');
+    content: url("../../public/TechImage/Next.png");
   }
 
   [data-theme="light"] #next img {
-    content: url('../../public/nextjs-light.svg');
+    content: url("../../public/nextjs-light.svg");
     width: 45px;
     margin-top: 35px;
   }
 }
 
 @media (max-width: 640px) {
-
   .main-title {
     font-size: 45px;
   }
