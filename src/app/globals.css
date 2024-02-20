@@ -158,12 +158,18 @@ body {
 
   .grid-container {
     width: 17vw;
-    margin: 0 150px;
+    margin: 10px 160px;
     justify-content: center;
     gap: 17px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 50px;
+  }
+
+  @media (max-width: 1536px) {
+    .grid-container {
+      margin: 0 auto;
+    }
   }
 
   .grid-container2 {

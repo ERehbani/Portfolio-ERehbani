@@ -101,6 +101,13 @@ export const technologies = {
       imageName: "PostgreSQL",
     },
     {
+      image: "/TechImage/mongodb.svg",
+      alt: "MongoDB",
+      width: 76,
+      height: 79,
+      imageName: "MongoDB",
+    },
+    {
       image: "/TechImage/git.png",
       alt: "Git",
       width: 78,

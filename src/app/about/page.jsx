@@ -152,11 +152,6 @@ function About() {
 
       <div className="mt-20 justify-center flex max-lg:mt-5 max-lg:block">
         <div className="imageAbout-container">
-          {/* <img
-        className="imageAbout"
-        src="photo.jpg"
-        alt="photo"
-      /> */}
           <Image
             src="/photo.jpg"
             alt="Photo"
@@ -254,9 +249,9 @@ function About() {
       <h1 className="text-7xl text-center font-medium mx-auto secondary-title max-lg:mt-4">
         Technologies
       </h1>
-      <div className="flex w-[80%] mx-auto justify-around my-5">
-        <div>
-          <h2 className="text2">Frontend</h2>
+      <div className="2xl:flex block w-[80%] mx-auto justify-around my-5">
+        <div className="mx-auto">
+          <h2 className="text2 text-center">Frontend</h2>
           <div className="grid-container">
             {technologies.frontend.map((tech, index) => (
               <div className="item-languages" key={index}>
@@ -272,10 +267,10 @@ function About() {
           </div>
         </div>
 
-              <hr className="text-white w-[40%] rotate-90 m-[-50px] mt-96"/>
+        <hr className="text-white w-[40%] 2xl:rotate-90 2xl:m-[-50px] 2xl:mt-96 md:max-2xl:my-10 md:max-2xl:mx-auto max-sm:my-5 max-sm:mx-auto" />
 
         <div>
-          <h2 className="text2">Backend</h2>
+          <h2 className="text2 text-center">Backend</h2>
           <div className="grid-container">
             {technologies.backend.map((tech, index) => (
               <div className="item-languages" key={index}>
