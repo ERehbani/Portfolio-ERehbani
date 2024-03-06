@@ -6,9 +6,11 @@ import Certifications from "../certifications/page";
 import Image from "next/image";
 import Link from "next/link";
 import { technologies } from "./technologies";
+import { useTranslation } from "react-i18next";
 
 function About() {
   const [result, setResult] = useState({});
+  const {t: t2} = useTranslation("global")
 
   useEffect(() => {
     const consultWeather = async () => {
@@ -38,59 +40,12 @@ function About() {
 
   const songsOnRepeat = [
     {
-      track: "Dead Man Walking",
-      artist: "Grant",
-      icon: "https://i.scdn.co/image/ab67616d00001e029e6efbf87d6460f4d7a387e0",
-      link: "https://open.spotify.com/intl-es/track/4ZPwjq0CdxbWFNycxnSUJc",
+      track: "Brad Pitt",
+      artist: "COIN",
+      icon: "https://i.scdn.co/image/ab67616d00001e029f31a0f29ae2e2c6d0782102",
+      link: "https://open.spotify.com/intl-es/track/7KpQCCnBbJiEuThRrVLCrb",
     },
-    {
-      track: "Tearing Me Up",
-      artist: "Bob Moses",
-      icon: "https://i.scdn.co/image/ab67616d00001e02ba8914058d8b4021a538ea1e",
-      link: "https://open.spotify.com/intl-es/track/2HBanw3xVQSWrdOtPfjsnK",
-    },
-    {
-      track: "Beautiful Liar",
-      artist: "Monsta X",
-      icon: "https://i.scdn.co/image/ab67616d00001e02303c2dba413b58c5137c69c4",
-      link: "https://open.spotify.com/intl-es/track/1F6qqwgyBjcIMzen8RrOXQ?si=cd9f4fd253b840eb",
-    },
-    {
-      track: "All Night",
-      artist: "(G)I-DLE",
-      icon: "https://i.scdn.co/image/ab67616d00001e0282dd2427e6d302711b1b9616",
-      link: "https://open.spotify.com/intl-es/track/1abAIeSQCbdPcxWgiwDOmL?si=50aa9e2e23f4407c",
-    },
-    {
-      track: "Love Brand New",
-      artist: "Bob Moses",
-      icon: "https://i.scdn.co/image/ab67616d00001e02560adce2969a4b70f345d289",
-      link: "https://open.spotify.com/intl-es/track/3lpoFakL5hsleW3EdYNdxL?si=bc1a2c284db145a6",
-    },
-    {
-      track: "Nave Espacial",
-      artist: "Liu & Samantha Machado",
-      icon: "https://i.scdn.co/image/ab67616d00001e021953659153357ff72129ef66",
-      link: "https://open.spotify.com/intl-es/track/709F4UQ2uKplKvcD88xffa?si=b55da90562ae42c2",
-    },
-    {
-      track: "Hanging On",
-      artist: "Bob Moses",
-      icon: "https://i.scdn.co/image/ab67616d00001e02560adce2969a4b70f345d289",
-      link: "https://open.spotify.com/intl-es/track/7wmp28Lvr13qbPpFFALAMt?si=0083f0b7a8044310",
-    },
-    {
-      track: "Queencard",
-      artist: "(G)I-DLE",
-      icon: "https://i.scdn.co/image/ab67616d00001e0282dd2427e6d302711b1b9616",
-      link: "https://open.spotify.com/intl-es/track/4uOBL4DDWWVx4RhYKlPbPC?si=45022899153f4d37",
-    },
-    {
-      track: "Fils de Joie",
-      artist: "Stromae",
-      icon: "https://i.scdn.co/image/ab67616d00001e0231d6b27ffaa0b2f89234698a",
-      link: "https://open.spotify.com/intl-es/track/6w2jx3gzQAtoKP22czcANv?si=c0acc36d72c34e0a",
-    },
+    
     {
       track: "Creepin'",
       artist: "Metro Boomin",
@@ -104,35 +59,30 @@ function About() {
       link: "https://open.spotify.com/intl-es/track/2H1qec30juJRXHbnvYzG85?si=2614d27b55ed4371",
     },
     {
-      track: "Live in the Moment",
-      artist: "Portugal. The Man",
-      icon: "https://i.scdn.co/image/ab67616d00001e02af52c228c9619ff6298b08cd",
-      link: "https://open.spotify.com/intl-es/track/60eOMEt3WNVX1m1jmApmnX?si=a87e1654749746b0",
+      track: "Your Lover",
+      artist: "Jane & The Boy",
+      icon: "https://i.scdn.co/image/ab67616d00001e02651eca6ade65058fc6cf2f50",
+      link: "https://open.spotify.com/intl-es/track/0AeGvs90gW3pZyjFyFOZdJ",
     },
     {
-      track: "Disorder",
-      artist: "RIOT",
-      icon: "https://i.scdn.co/image/ab67616d00001e0282322271fb9261dec9fee0e3",
-      link: "https://open.spotify.com/intl-es/track/6P83H1EWbEcXrxcSqgs6wc?si=b051b9edaa724a7d",
+      track: "Missing You",
+      artist: "SG Lewis",
+      icon: "https://i.scdn.co/image/ab67616d00001e02623b593ab9bf0399a0aea2bd",
+      link: "https://open.spotify.com/intl-es/track/35xgGlWw63Vml5VMUxU2xy",
     },
     {
-      track: "Inner Light",
-      artist: "Elderbrook & Bob Moses",
-      icon: "https://i.scdn.co/image/ab67616d00001e02a63745282e4fea8542af977d",
-      link: "https://open.spotify.com/intl-es/track/40tPP3K10yMZxwnT65REKj?si=990b21ade1f34065",
+      track: "Nothing New",
+      artist: "The Strike",
+      icon: "https://i.scdn.co/image/ab67616d00001e020ad9b58c5c2c6a204ee8cc75",
+      link: "https://open.spotify.com/intl-es/track/3FvlayEQ7rHflEnZCt1zdH",
     },
     {
-      track: "Do It All Again",
-      artist: "Punctual & Jordan Shaw",
-      icon: "https://i.scdn.co/image/ab67616d00001e0248a280c9975ed09b734b5191",
-      link: "https://open.spotify.com/intl-es/track/6BwPstqf4RoRMbDidFWNxE?si=a6f3bc366e1f4cc0",
+      track: "Vampire Disco",
+      artist: "Friday Pilots Club",
+      icon: "https://i.scdn.co/image/ab67616d00001e02fd754e85db47aa3868149e85",
+      link: "https://open.spotify.com/intl-es/track/10euvsoL7wJqromh3lErtP",
     },
-    {
-      track: "GOTTASAEDAE",
-      artist: "BewhY",
-      icon: "https://i.scdn.co/image/ab67616d00001e025e08b785de700455475b9425",
-      link: "https://open.spotify.com/intl-es/track/5nJvKQsFRmCp2i7EiKjZDg?si=022c9e34176641d2",
-    },
+  
   ];
 
   const getRandomSong = (array) => {
@@ -143,10 +93,10 @@ function About() {
   const randomSong = getRandomSong(songsOnRepeat);
 
   return (
-    <div className="">
+    <div>
       <div>
-        <h1 className="main-title flex text-7xl text-center font-medium mt-20 justify-center max-lg:mb-5">
-          About me
+        <h1 className="main-title flex text-7xl text-center font-medium mt-14 justify-center max-lg:mb-5">
+          {t2("about.Title")}
         </h1>
       </div>
 
@@ -174,7 +124,7 @@ function About() {
                   alt="Song"
                   width={60}
                   height={0}
-                  className="onRepeat-icon object-contain"
+                  className="onRepeat-icon object-contain shadow-xl rounded-sm"
                 />
                 <div className="onRepeat-info-text">
                   <p className="onRepeat-track">{randomSong.track} by</p>
@@ -185,10 +135,61 @@ function About() {
           </div>
         </div>
         <div className="divText">
-          <h1 className="text1">Hello, I'm Elian</h1>
+          <div className="flex items-center gap-5 max-lg:flex-col">
+            <h1 className="text1">{t2("about.Hello")}</h1>
+            <p className="bg-[#1db954] w-fit h-fit p-2 rounded-3xl text-sm">
+             {t2("about.Free")}
+            </p>
+          </div>
+          <div className="text-white mt-28 justify-around contact-container-about">
+            <div>
+              <div className="contact-items-about" id="linkedin">
+                <Link
+                  target="_blank"
+                  href="https://www.linkedin.com/in/elian-rehbani-96113624b/">
+                  <Image
+                    src="/linkedin.svg"
+                    alt="Linkedin"
+                    width={50}
+                    height={0}
+                  />
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="contact-items-about" id="github">
+                <Link target="_blank" href="https://github.com/ERehbani">
+                  <Image src="/Github.svg" alt="Github" width={50} height={0} />
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="contact-items-about" id="gmail">
+                <Link target="_blank" href="mailto:elianrhbn@gmail.com">
+                  <Image src="/gmail.svg" alt="Gmail" width={50} height={0} />
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="contact-items-about" id="fiverr">
+                <Link target="_blank" href="https://es.fiverr.com/elinrhbn">
+                  <Image src="/fiverr.svg" alt="Fiverr" width={50} height={0} />
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="contact-items-about" id="upwork">
+                <Link
+                  target="_blank"
+                  href="https://www.upwork.com/freelancers/~01cb5ee7641e3347f8">
+                  <Image src="/upwork.svg" alt="Upwork" width={50} height={0} />
+                </Link>
+              </div>
+            </div>
+          </div>
           <h3 className="text2">
-            A <b>Full Stack Developer Junior</b> <br />
-            working from{" "}
+            {t2("about.Title1")} <b>{t2("about.Title2")}</b> <br />
+           {t2("about.Title3")}{" "}
             {result.main ? parseInt(result.main.temp - kelvin) : ""}°C
             <p className="flex align-center max-lg:text-lg max-lg:w-fit my-0 mx-auto max-sm:text-sm">
               Mar del Plata
@@ -202,11 +203,7 @@ function About() {
           </h3>
           <div className="max-lg:w-8/12 max-lg:my-0 max-lg:mx-auto max-sm:mx-0">
             <h3 className="text3">
-              I started my path as a Full Stack programmer in 2023 learning the
-              basics with NodeJS and then taking care of the Front especially
-              with ReactJS which gave me the possibility to create both
-              individual and group projects. Likewise, taking advantage of
-              ReactJS tools, I am expanding to mobile with React Native.
+             {t2("about.Description")}
             </h3>
           </div>
           <div className="download">
@@ -247,7 +244,7 @@ function About() {
       </div>
 
       <h1 className="text-7xl text-center font-medium mx-auto secondary-title max-lg:mt-4">
-        Technologies
+        {t2("about.Technologies")}
       </h1>
       <div className="2xl:flex block w-[80%] mx-auto justify-around my-5">
         <div className="mx-auto">
@@ -291,22 +288,18 @@ function About() {
       </h1>
       <div className="grid-container2">
         <div className="item-languages" id="figma">
-          {/* <img src="Figma.svg" alt="Figma" /> */}
           <Image src="Figma.svg" alt="Figma" width={49} height={0} />
           <p>Figma</p>
         </div>
         <div className="item-languages" id="vscode">
-          {/* <img src="VSCode.svg" alt="VSCode" /> */}
           <Image src="/VSCode.svg" alt="VSCode" width={71} height={0} />
           <p>VSCode</p>
         </div>
         <div className="item-languages" id="github">
-          {/* <img src="Github.svg" alt="Github" className="w-16"/> */}
           <Image src="/Github.svg" alt="Github" width={64} height={0} />
           <p>Github</p>
         </div>
         <div className="item-languages" id="insomnia">
-          {/* <img src="Insomnia.svg" alt="Insomnia" /> */}
           <Image src="/Insomnia.svg" alt="Insomnia" width={71} height={0} />
           <p>Insomnia</p>
         </div>

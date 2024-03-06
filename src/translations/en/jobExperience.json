@@ -1,0 +1,9 @@
+{
+    "jobExperience": {
+      "main": "Job Experience",
+      "title": "Frontend Developer",
+      "date": "January 2024 - Present",
+      "description": "I am currently working as a Frontend Developer using React, MaterialUI and Zustand for state management. Developing web sections with implementation of reusable components, navigation between them, graphics, login forms, all types of card components and responsive design"
+    }
+  }
+  

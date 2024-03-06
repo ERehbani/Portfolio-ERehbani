@@ -1,0 +1,14 @@
+{
+  "about": {
+    "Title": "Sobre mí",
+    "Hello": "Hola, soy Elián",
+    "Free": "Disponible como Freelancer!",
+    "Title1": "Un",
+    "Title2": "Desarrollador Full Stack Júnior",
+    "Title3": "trabajando desde",
+    "Description": "Inicié mi camino como programador Full Stack en el 2023 aprendiendo los conceptos básicos con NodeJS para luego encargarme del Front especialmente con ReactJS lo que me dio la posibilidad de crear proyectos tanto individuales como grupales. Asimismo, aprovechando las herramientas de ReactJS, me estoy expandiendo al móvil con React Native.",
+    "Technologies": "Tecnologías",
+    "Certifications": "Certificaciones",
+    "Contact": "Contacto"
+  }
+}

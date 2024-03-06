@@ -1,0 +1,8 @@
+{
+  "jobExperience": {
+    "main": "Experiencia laboral",
+    "title": "Desarrollador Frontend",
+    "date": "Enero 2024 - Actualidad",
+    "description": "Actualmente me encuentro trabajando como Desarrollador Frontend usando React, MaterialUI y Zustand para la gestión del estado. Desarrollo de secciones web con implementación de componentes reutilizables, navegación entre ellos, gráficos, formularios de inicio de sesión, todo tipo de componentes de tarjetas y diseño responsivo."
+  }
+}

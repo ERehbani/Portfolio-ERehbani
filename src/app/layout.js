@@ -1,8 +1,27 @@
+"use client";
 import Navbar from "@/components/navbar/page";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Prompt } from "next/font/google";
 import Providers from "./providers";
+import { I18nextProvider, useTranslation } from "react-i18next";
+import i18next from "i18next";
+import { es } from "../translations/es";
+import { en } from "../translations/en";
+
+i18next.init({
+  interpolation: { escapeValue: false },
+  resources: {
+    es: {
+      global: es.global,
+    },
+    en: {
+      global: en.global,
+    },
+  },
+  lng: "en",
+});
+
 
 const prompt = Prompt({
   weight: ["300", "500", "700"],
@@ -43,13 +62,15 @@ export default function RootLayout({ children }) {
           content="Elian Rehbani | Portfolio"></meta>
       </head>
       <body className={prompt.className}>
-        <Providers>
-          <div className="background"></div>
-          <div className="background2"></div>
-          <Navbar />
-          {children}
-          <Analytics />
-        </Providers>
+        <I18nextProvider i18n={i18next}>
+          <Providers>
+            <div className="background"></div>
+            <div className="background2"></div>
+            <Navbar />
+            {children}
+            <Analytics />
+          </Providers>
+        </I18nextProvider>
       </body>
     </html>
   );

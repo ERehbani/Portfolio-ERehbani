@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import About from "./about/page";
 import "./globals.css";
@@ -5,18 +6,31 @@ import Projects from "./projects/page";
 import Footer from "@/components/footer/page";
 import Contact from "./contact/page";
 import JobExperience from "./jobExperience/page";
+import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t: t2, i18n } = useTranslation("global");
+
+  const changeLanguage = (language) => {
+    console.log(language);
+    i18n.changeLanguage(language);
+  };
+
+  console.log(t2("header.title"));
   return (
     <div className="h-36">
       <div className="mt-52 mx-auto">
         <h1 className="main-title text-8xl text-center font-medium mx-auto">
-          Hi. I’m Elián <br />A Full Stack Dev.
+          {t2("header.title")} <br />
+          {t2("header.title2")}
         </h1>
+
+        
+
         {/* https://github.com/atomiks/tippyjs-react */}
         <p className="main-p w-2/6 text-center justify-center font-light mx-auto mt-10  text-lg">
-          I love designing intuitive interfaces and developing efficient
-          solutions for all kinds of problems both front-end and back-end.
+          {t2("header.description")}
         </p>
       </div>
 
@@ -29,12 +43,10 @@ export default function Home() {
         <About />
       </div>
 
-      <div  id="projects"></div>
+      <div id="projects"></div>
       <div>
         <Projects />
       </div>
-
-     
 
       <div className="mb-40" id="contact">
         <div>

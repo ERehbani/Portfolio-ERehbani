@@ -1,8 +1,7 @@
 /* The switch - the box around the slider */
 .switch-container {
-    margin-top: -40px;
     position: absolute;
-    left: 20px;
+
 }
 
 .switch {
@@ -16,6 +15,8 @@
     opacity: 0;
     width: 0;
     height: 0;
+    border: 1px solid red;
+    width: fit-content;
 }
 
 /* The slider */

@@ -1,0 +1,30 @@
+{
+    "projects": {
+      "title": "My Projects",
+      "project1": {
+        "title": "Ooink.me",
+        "description": "I developed the Ooink.me web application based on the coding of internet links through a random code to facilitate their sharing on networks. Made with NextJS, TailwindCSS with backend in NextJS and database in Postgres with the Prisma ORM and deployed in Vercel"
+      },
+      "project2": {
+        "title": "Talent Forge, a course platform",
+        "description": "I participated in the creation of a web platform based on the purchase and sale of courses in which I gained knowledge in Figma, Git Flow and managed to implement the Mercado Pago payment gateway to make purchases on the web. I was part of the Frontend section directing its web design, declaring the color palette of the platform and distribution of the components and its responsive design. Using for the creation of the same Javascript, MongoDB, ExpressJS, React JS, CSS and Tailwind"
+      },
+      "project3": {
+        "title": "Web with API Countries",
+        "description": "I made a landing on countries where the main points were to create a creation form in the database, search by name, detail of each country, combined filters and pagination with a clear, minimalist and visually pleasing design using Javascript, React , Redux, CSS and SQL"
+      },
+      "project4": {
+        "title": "Expense Planner in React Native",
+        "description": "Application for organizing expenses by setting an initial budget, which will be monitored through the expenses that are added."
+      },
+      "project5": {
+        "title": "Administrator of appointments in React Native",
+        "description": "With the functionalities of creating a new appointment with a form in Modal mode and Date Picker to set a registration date, viewing new appointments, viewing, editing and deleting them"
+      },
+      "project6": {
+        "title": "Weather App in React Native",
+        "description": "App in React Native using the Open Weather API to show the weather of each city applying its name and corresponding country"
+      }
+    }
+  }
+  

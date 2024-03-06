@@ -1,0 +1,29 @@
+{
+  "projects": {
+    "title": "Mis Proyectos",
+    "project1": {
+      "title": "Ooink.me",
+      "description": "Desarrollé la aplicación web Ooink.me basada en la codificación de enlaces de internet mediante un código aleatorio para facilitar su intercambio en redes. Hecho con NextJS, TailwindCSS con backend en NextJS y base de datos en Postgres con Prisma ORM y desplegado en Vercel"
+    },
+    "project2": {
+      "title": "Talent Forge, una plataforma de cursos",
+      "description": "Participé en la creación de una plataforma web basada en compra y venta de cursos en la que obtuve conocimientos en Figma, Git Flow y logré implementar la pasarela de pagos de Mercado Pago para realizar compras en la web. Fui parte de la sección Frontend dirigiendo su diseño web, declarando la paleta de colores de la plataforma y distribución de los componentes y su diseño responsive. Utilizando para la creación del mismo Javascript, MongoDB, ExpressJS, React JS, CSS y Tailwind"
+    },
+    "project3": {
+      "title": "Web con API de Países",
+      "description": "Realicé un aterrizaje en países donde los puntos principales eran crear un formulario de creación en la base de datos, buscar por nombre, detalle de cada país, combinar filtros y paginación con un diseño claro, minimalista y visualmente agradable usando Javascript, React, Redux, CSS. y SQL"
+    },
+    "project4": {
+      "title": "Planificador de gastos",
+      "description": "Aplicación para la organización de gastos estableciendo un presupuesto inicial, el cual será monitoreado a través de los gastos que se vayan sumando."
+    },
+    "project5": {
+      "title": "Administrador de Citas en React Native",
+      "description": "Con las funcionalidades de crear una nueva cita con un formulario en modo Modal y Selector de Fecha para establecer una fecha de registro, ver nuevas citas, visualizarlas, editarlas y eliminarlas."
+    },
+    "project6": {
+      "title": "App de Clima en React Native",
+      "description": "Aplicación en React Native que utiliza la API Open Weather para mostrar el clima de cada ciudad aplicando su nombre y país correspondiente"
+    }
+  }
+}

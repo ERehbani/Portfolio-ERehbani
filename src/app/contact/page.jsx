@@ -2,11 +2,15 @@ import React from "react";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+
+  const {t: t2 } = useTranslation("global")
+
   return (
     <div className="mt-40">
-      <h1 className="secondary-title text-7xl flex justify-center">Contact</h1>
+      <h1 className="secondary-title text-7xl flex justify-center">{t2("about.Contact")}</h1>
       <div className="text-white mt-28 flex justify-around contact-container">
         <div className="contact-items" id="linkedin">
           <Link
@@ -28,14 +32,16 @@ function Contact() {
             <p className="flex">elianrhbn@gmail.com</p>
           </Link>
         </div>
-        <div className="contact-items" id="gmail">
+        <div className="contact-items" id="fiverr">
           <Link target="_blank" href="https://es.fiverr.com/elinrhbn">
             <Image src="/fiverr.svg" alt="Fiverr" width={80} height={0} />
             <p className="flex">elinrhbn</p>
           </Link>
         </div>
-        <div className="contact-items" id="gmail">
-          <Link target="_blank" href="https://www.upwork.com/freelancers/~01cb5ee7641e3347f8">
+        <div className="contact-items" id="upwork">
+          <Link
+            target="_blank"
+            href="https://www.upwork.com/freelancers/~01cb5ee7641e3347f8">
             <Image src="/upwork.svg" alt="Upwork" width={80} height={0} />
             <p className="flex">Elian Rehbani</p>
           </Link>
