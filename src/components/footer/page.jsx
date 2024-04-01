@@ -19,7 +19,6 @@ function Footer() {
   };
 
   const changeLanguage = (language) => {
-    console.log(language);
     i18n.changeLanguage(language);
     setLastPressed(language);
     if (language === "es") {

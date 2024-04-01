@@ -11,7 +11,6 @@ function ThemeSwitcher() {
   const [esPressed, setEsPressed] = useState(false);
 
   const changeLanguage = (language) => {
-    console.log(language);
     i18n.changeLanguage(language);
     setLastPressed(language);
     if (language === "es") {

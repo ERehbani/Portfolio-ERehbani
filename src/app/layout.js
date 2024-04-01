@@ -29,7 +29,7 @@ const prompt = Prompt({
   subsets: ["latin"],
 });
 
-export const metadata = {
+const metadata = {
   title: "Elian Rehbani | Portfolio",
   description: "Elian's portfolio created with NextJS",
   keywords:

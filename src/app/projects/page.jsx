@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 // import { projectNative, projects } from "./projects";
 import "./globals.css";
-import "balloon-css";
 import { useTranslation } from "react-i18next";
 
 function Projects() {
@@ -559,7 +558,7 @@ function Projects() {
                 {item.icons?.map((item, index) => (
                   <div key={index} className="div-icons mt-4">
                     <button
-                      data-balloon-pos="up"
+                      // data-balloon-pos="up"
                       aria-label={item.span.span}
                       className="tooltip">
                       <Image
@@ -616,7 +615,9 @@ function Projects() {
               <div className="icons">
                 {item.icons.map((item, index) => (
                   <div key={index} className="div-icons">
-                    <button data-balloon-pos="up" aria-label={item.span.span}>
+                    <button 
+                    // data-balloon-pos="up"
+                     aria-label={item.span.span}>
                       <Image
                         src={item.src}
                         alt={item.alt}

@@ -12,12 +12,7 @@ import { useTranslation } from "react-i18next";
 export default function Home() {
   const { t: t2, i18n } = useTranslation("global");
 
-  const changeLanguage = (language) => {
-    console.log(language);
-    i18n.changeLanguage(language);
-  };
 
-  console.log(t2("header.title"));
   return (
     <div className="h-36">
       <div className="mt-52 mx-auto">
